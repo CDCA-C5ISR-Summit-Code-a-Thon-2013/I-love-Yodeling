@@ -6,9 +6,12 @@
 //  Copyright (c) 2013 SPARC. All rights reserved.
 //
 
+#import <MapKit/MapKit.h>
 #import "MapViewController.h"
 
 @interface MapViewController ()
+
+@property (nonatomic, strong) IBOutlet MKMapView *mapView;
 
 @end
 
