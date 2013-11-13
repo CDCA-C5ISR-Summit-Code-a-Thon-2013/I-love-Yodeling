@@ -23,6 +23,7 @@
 		9267E80D1833C54F004796FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9267E80B1833C54F004796FE /* InfoPlist.strings */; };
 		9267E80F1833C550004796FE /* SmartTravelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9267E80E1833C550004796FE /* SmartTravelTests.m */; };
 		9267E81B1833CA7F004796FE /* BeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9267E81A1833CA7F004796FE /* BeaconManager.m */; };
+		9267E81F1833D0B6004796FE /* BookmarkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9267E81E1833D0B6004796FE /* BookmarkCell.m */; };
 		D246CB881833C6C800034DB0 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D246CB871833C6C800034DB0 /* MapViewController.m */; };
 		D246CB8B1833C6D400034DB0 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D246CB8A1833C6D400034DB0 /* SearchViewController.m */; };
 		D246CB8E1833C6E000034DB0 /* BookmarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D246CB8D1833C6E000034DB0 /* BookmarkViewController.m */; };
@@ -65,6 +66,8 @@
 		9267E80E1833C550004796FE /* SmartTravelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartTravelTests.m; sourceTree = "<group>"; };
 		9267E8191833CA7F004796FE /* BeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconManager.h; sourceTree = "<group>"; };
 		9267E81A1833CA7F004796FE /* BeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconManager.m; sourceTree = "<group>"; };
+		9267E81D1833D0B6004796FE /* BookmarkCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkCell.h; sourceTree = "<group>"; };
+		9267E81E1833D0B6004796FE /* BookmarkCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkCell.m; sourceTree = "<group>"; };
 		D246CB861833C6C800034DB0 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		D246CB871833C6C800034DB0 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		D246CB891833C6D400034DB0 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
@@ -155,6 +158,8 @@
 				D246CB8D1833C6E000034DB0 /* BookmarkViewController.m */,
 				D246CB8F1833CDAA00034DB0 /* SearchCell.h */,
 				D246CB901833CDAA00034DB0 /* SearchCell.m */,
+				9267E81D1833D0B6004796FE /* BookmarkCell.h */,
+				9267E81E1833D0B6004796FE /* BookmarkCell.m */,
 			);
 			path = SmartTravel;
 			sourceTree = "<group>";
@@ -311,6 +316,7 @@
 				9267E7ED1833C54F004796FE /* main.m in Sources */,
 				D246CB8E1833C6E000034DB0 /* BookmarkViewController.m in Sources */,
 				9267E81B1833CA7F004796FE /* BeaconManager.m in Sources */,
+				9267E81F1833D0B6004796FE /* BookmarkCell.m in Sources */,
 				D246CB8B1833C6D400034DB0 /* SearchViewController.m in Sources */,
 				D246CB911833CDAA00034DB0 /* SearchCell.m in Sources */,
 				9267E7FA1833C54F004796FE /* SmartTravelViewController.m in Sources */,

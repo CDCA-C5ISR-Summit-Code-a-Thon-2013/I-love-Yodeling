@@ -9,7 +9,7 @@
 #import "BookmarkViewController.h"
 
 @interface BookmarkViewController ()
-
+@property (weak, nonatomic) IBOutlet UITableView *bookmarkTable;
 @end
 
 @implementation BookmarkViewController

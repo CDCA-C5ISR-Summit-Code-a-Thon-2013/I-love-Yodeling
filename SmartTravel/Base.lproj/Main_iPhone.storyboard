@@ -133,11 +133,18 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="b8j-sc-29H" id="RHe-aR-8qc"/>
+                                    <outlet property="delegate" destination="b8j-sc-29H" id="S9t-ys-OSM"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="yJd-fE-y6Y"/>
+                    <connections>
+                        <outlet property="bookmarkTable" destination="6RQ-Nd-V09" id="Fd8-oP-GV4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQU-sC-ePu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
