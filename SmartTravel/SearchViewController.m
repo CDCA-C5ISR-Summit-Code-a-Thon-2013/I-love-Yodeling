@@ -8,6 +8,7 @@
 
 #import "SearchViewController.h"
 #import "SearchCell.h"
+#import "SearchBarCell.h"
 
 @interface SearchViewController ()
 
@@ -28,6 +29,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    [self.searchDisplayController setDisplaysSearchBarInNavigationBar:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,17 +44,36 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 1;
+    return 2;
 }
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *CellIdentifier = @"searchCell";
+    UITableViewCell *cell;
     
-    SearchCell *cell = [self.searchTableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if ( cell == nil ) {
-        cell = [[SearchCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    if (indexPath.section == 0) {
+        
+        static NSString *CellIdentifier = @"searchBarCell";
+        
+        SearchBarCell *cell = [self.searchTableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        if ( cell == nil ) {
+            cell = [[SearchBarCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        }
+        
+        return cell;
+        
+    } else if (indexPath.section == 1) {
+        
+        static NSString *CellIdentifier = @"searchCell";
+        
+        SearchCell *cell = [self.searchTableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        if ( cell == nil ) {
+            cell = [[SearchCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        }
+        
+        return cell;
     }
+    
     return cell;
 }
 
