@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BeaconManager.h"
 
-@interface MapViewController : UIViewController <MKMapViewDelegate>
+@interface MapViewController : UIViewController <MKMapViewDelegate,BeaconTrackingManagerDelegate>
 
 @end

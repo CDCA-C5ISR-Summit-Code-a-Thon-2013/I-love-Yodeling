@@ -9,10 +9,12 @@
 #import "LocationAnnotation.h"
 #import <MapKit/MapKit.h>
 #import "MapViewController.h"
+#import "BeaconManager.h"
 
 @interface MapViewController ()
 
 @property (nonatomic, strong) IBOutlet MKMapView *mapView;
+@property (nonatomic, strong) BeaconManager *beaconManager;
 
 @end
 
@@ -30,6 +32,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    _beaconManager = [[BeaconManager alloc] initWithUUID:@"9f1fcde8-47c2-11e3-86ae-ce3f5508acd9" identifier:@"com.smarttravel"];
+    _beaconManager.delegate = self;
+    [_beaconManager startBeaconRanging];
     
     // show user location
     _mapView.showsUserLocation = TRUE;
@@ -108,6 +114,16 @@
 //    annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIBut];
     
     return annotationView;
+}
+
+#pragma mark - beacon delegate methods
+
+-(void)didEnterRegion:(CLRegion *)region{
+    NSLog(@"Did enter region");
+}
+
+-(void)didFindBeacons:(NSArray *)beacons{
+    NSLog(@"Did find beacons %i",[beacons count]);
 }
 
 @end
