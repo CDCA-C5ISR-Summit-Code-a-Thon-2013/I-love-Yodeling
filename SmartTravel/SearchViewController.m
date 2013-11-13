@@ -8,15 +8,18 @@
 
 #import "SearchViewController.h"
 #import "SearchCell.h"
-//#import "SearchBarCell.h"
 #import "Bookmark.h"
 #import "MockData.h"
+//#import "UIImage+ImageEffects.h"
+#import "ImageHandler.h"
 
 @interface SearchViewController ()
 
 @property (strong, nonatomic) IBOutlet UIView *searchBarView;
 @property (retain) NSArray *mockDataArray;
 @property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
+@property (strong, nonatomic) IBOutlet UITableView *searchViewLabel;
 
 @end
 
@@ -40,11 +43,11 @@
     MockData *mockme = [[MockData alloc] init];
     self.mockDataArray = mockme.loadMockData;
     
-    self.searchBarView.backgroundColor = [UIColor cyanColor];
     self.searchTableView.hidden = YES;
     [self.searchBar setDelegate:self];
+    self.searchTableView.backgroundColor = [UIColor clearColor];
     
-    [self.searchDisplayController setDisplaysSearchBarInNavigationBar:YES];
+    self.view.backgroundColor = [UIColor clearColor];
     
     [self.searchTableView reloadData];
 }
@@ -53,6 +56,12 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    
+    self.backgroundImageView.image = [ImageHandler getMapImage];
+    
 }
 
 
@@ -79,7 +88,7 @@
     
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         [cell setAccessoryType:UITableViewCellAccessoryNone];
-        cell.backgroundColor = [UIColor cyanColor];
+        cell.backgroundColor = [UIColor clearColor];
         
         Bookmark *bookmark = [self.mockDataArray objectAtIndex:indexPath.row];
         
