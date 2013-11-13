@@ -12,6 +12,8 @@
 #import "MockData.h"
 #import "BeaconManager.h"
 #import "ImageHandler.h"
+#import "BusinessDetailsViewController.h"
+#import "Location.h"
 
 @interface MapViewController ()
 
@@ -128,5 +130,19 @@
         [self performSegueWithIdentifier:@"showDetails" sender:self];
     }
 }
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([[segue identifier] isEqualToString:@"showDetails"]) {
+        BusinessDetailsViewController *bdvc = [segue destinationViewController];
+        MockData *mockData = [[MockData alloc] init];
+        NSArray *data = [mockData getLocationData];
+        Location *location = data[0];
+        bdvc.businessAddress = location.address;
+        bdvc.businessNameText = location.name;
+        bdvc.businessDealText = location.dealText;
+        bdvc.businessImage = [UIImage imageNamed:location.image];
+    }
+}
+
 
 @end
