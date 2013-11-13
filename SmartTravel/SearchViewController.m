@@ -48,9 +48,7 @@
     [self.searchBar setDelegate:self];
     self.searchTableView.backgroundColor = [UIColor clearColor];
     
-    self.view.backgroundColor = [UIColor clearColor];
-    
-    self.searchViewLabel.textColor = [UIColor blueColor];
+    self.searchViewLabel.textColor = [UIColor blackColor];
     self.searchViewLabel.alpha = .5;
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
