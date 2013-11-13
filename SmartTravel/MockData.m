@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 SPARC. All rights reserved.
 //
 
+#import "Location.h"
 #import "MockData.h"
 #import "UIImage+ImageEffects.h"
 
@@ -49,43 +50,6 @@
     [locationArray addObject:[[Location alloc] initWithName:@"Yogi Bear’s Jellystone Park Camp Resorts" andAddress:@"357 Cedar Creek Rd" andImage:@"" andDealText:@"10% off campsites for active military" andCoordinate:CLLocationCoordinate2DMake(33.373384, -79.658863)]];
     
     return locationArray;
-}
-
-- (NSArray *) loadMockData {
-    
-    NSArray *locationArray = [self getLocationData];
-    
-    Bookmark *location1 = [[Bookmark alloc] init];
-    location1.location = [locationArray objectAtIndex:0];
-    
-    Bookmark *location2 = [[Bookmark alloc] init];
-    location2.location = [locationArray objectAtIndex:1];
-    
-    Bookmark *location3 = [[Bookmark alloc] init];
-    location3.location = [locationArray objectAtIndex:2];
-    
-    Bookmark *location4 = [[Bookmark alloc] init];
-    location4.location = [locationArray objectAtIndex:3];
-    
-    Bookmark *location5 = [[Bookmark alloc] init];
-    location5.location = [locationArray objectAtIndex:4];
-    
-//    Bookmark *location6 = [[Bookmark alloc] init];
-//    location6.location = [locationArray objectAtIndex:0];
-//    
-//    Bookmark *location7 = [[Bookmark alloc] init];
-//    location7.businessname = @"Test";
-//    location7.dealText = @"Test again";
-//    
-//    Bookmark *location8 = [[Bookmark alloc] init];
-//    location8.businessname = @"Test";
-//    location8.dealText = @"Test again";
-    
-    // Sample Data
-    NSArray *mediaArray = [[NSMutableArray alloc] initWithObjects:
-                           location1, location2, location3, location4, location5, nil];
-    
-    return mediaArray;
 }
 
 

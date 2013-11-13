@@ -7,12 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Bookmark.h"
 
 @interface MockData : NSObject
 
 - (NSArray*) getLocationData;
-- (NSArray *) loadMockData;
 - (UIImage *) blurSnapshotLightEffect : (UIViewController *) currentViewController;
 
 @end

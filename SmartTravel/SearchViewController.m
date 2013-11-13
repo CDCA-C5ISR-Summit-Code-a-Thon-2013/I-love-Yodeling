@@ -8,7 +8,7 @@
 
 #import "SearchViewController.h"
 #import "SearchCell.h"
-#import "Bookmark.h"
+#import "Location.h"
 #import "MockData.h"
 #import "ImageHandler.h"
 
@@ -40,7 +40,7 @@
     
     //load up mock data
     MockData *mockme = [[MockData alloc] init];
-    self.mockDataArray = mockme.loadMockData;
+    self.mockDataArray = [mockme getLocationData];
     
     self.searchTableView.hidden = YES;
     [self.searchBar setDelegate:self];
@@ -98,13 +98,13 @@
         [cell setAccessoryType:UITableViewCellAccessoryNone];
         cell.backgroundColor = [UIColor clearColor];
         
-        Bookmark *bookmark = [self.mockDataArray objectAtIndex:indexPath.row];
+        Location *location = [self.mockDataArray objectAtIndex:indexPath.row];
         
-        cell.businessnameLabel.text = bookmark.location.name;
+        cell.businessnameLabel.text = location.name;
         cell.businessnameLabel.textColor = [UIColor blueColor];
         cell.businessnameLabel.alpha = .5;
     
-        cell.locationLabel.text = bookmark.location.address;
+        cell.locationLabel.text = location.address;
         cell.locationLabel.textColor = [UIColor blueColor];
         cell.locationLabel.alpha = .5;
     
