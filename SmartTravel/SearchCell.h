@@ -10,4 +10,8 @@
 
 @interface SearchCell : UITableViewCell
 
+@property (strong, nonatomic) IBOutlet UIImageView *businessImage;
+@property (strong, nonatomic) IBOutlet UILabel *businessnameLabel;
+@property (strong, nonatomic) IBOutlet UILabel *dealLabel;
+
 @end
