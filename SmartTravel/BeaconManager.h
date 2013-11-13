@@ -7,7 +7,25 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface BeaconManager : NSObject
+@protocol BeaconTrackingManagerDelegate <NSObject>
+
+@required
+- (void)didFindBeacons:(NSArray*)beacons;
+- (void)didEnterRegion:(CLRegion*)region;
+@end
+
+
+@interface BeaconManager : NSObject<CLLocationManagerDelegate>{
+    //delegate to respond back
+    id <BeaconTrackingManagerDelegate> _delegate;
+}
+
+@property (nonatomic,strong) id delegate;
+
+- (id)initWithUUID:(NSString*)proxUuid identifier:(NSString*)identifier;
+
+-(void)startBeaconRanging;
 
 @end

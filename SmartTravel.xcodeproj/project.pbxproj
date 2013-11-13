@@ -23,9 +23,13 @@
 		9267E80D1833C54F004796FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9267E80B1833C54F004796FE /* InfoPlist.strings */; };
 		9267E80F1833C550004796FE /* SmartTravelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9267E80E1833C550004796FE /* SmartTravelTests.m */; };
 		9267E81B1833CA7F004796FE /* BeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9267E81A1833CA7F004796FE /* BeaconManager.m */; };
+		9267E81F1833D0B6004796FE /* BookmarkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9267E81E1833D0B6004796FE /* BookmarkCell.m */; };
 		D246CB881833C6C800034DB0 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D246CB871833C6C800034DB0 /* MapViewController.m */; };
 		D246CB8B1833C6D400034DB0 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D246CB8A1833C6D400034DB0 /* SearchViewController.m */; };
 		D246CB8E1833C6E000034DB0 /* BookmarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D246CB8D1833C6E000034DB0 /* BookmarkViewController.m */; };
+		D246CB911833CDAA00034DB0 /* SearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D246CB901833CDAA00034DB0 /* SearchCell.m */; };
+		D246CB951833D04D00034DB0 /* 06-magnify.png in Resources */ = {isa = PBXBuildFile; fileRef = D246CB931833D04D00034DB0 /* 06-magnify.png */; };
+		D246CB961833D04D00034DB0 /* 06-magnify@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D246CB941833D04D00034DB0 /* 06-magnify@2x.png */; };
 		D6CBEDDC1833CB3F0093A175 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6CBEDDB1833CB3F0093A175 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,12 +66,18 @@
 		9267E80E1833C550004796FE /* SmartTravelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartTravelTests.m; sourceTree = "<group>"; };
 		9267E8191833CA7F004796FE /* BeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconManager.h; sourceTree = "<group>"; };
 		9267E81A1833CA7F004796FE /* BeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconManager.m; sourceTree = "<group>"; };
+		9267E81D1833D0B6004796FE /* BookmarkCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkCell.h; sourceTree = "<group>"; };
+		9267E81E1833D0B6004796FE /* BookmarkCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkCell.m; sourceTree = "<group>"; };
 		D246CB861833C6C800034DB0 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		D246CB871833C6C800034DB0 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		D246CB891833C6D400034DB0 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		D246CB8A1833C6D400034DB0 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		D246CB8C1833C6E000034DB0 /* BookmarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkViewController.h; sourceTree = "<group>"; };
 		D246CB8D1833C6E000034DB0 /* BookmarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkViewController.m; sourceTree = "<group>"; };
+		D246CB8F1833CDAA00034DB0 /* SearchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCell.h; sourceTree = "<group>"; };
+		D246CB901833CDAA00034DB0 /* SearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCell.m; sourceTree = "<group>"; };
+		D246CB931833D04D00034DB0 /* 06-magnify.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "06-magnify.png"; sourceTree = "<group>"; };
+		D246CB941833D04D00034DB0 /* 06-magnify@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "06-magnify@2x.png"; sourceTree = "<group>"; };
 		D6CBEDDB1833CB3F0093A175 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -130,6 +140,7 @@
 		9267E7E61833C54F004796FE /* SmartTravel */ = {
 			isa = PBXGroup;
 			children = (
+				D246CB971833D05200034DB0 /* Images */,
 				9267E8181833CA53004796FE /* BeaconManager */,
 				9267E7EF1833C54F004796FE /* SmartTravelAppDelegate.h */,
 				9267E7F01833C54F004796FE /* SmartTravelAppDelegate.m */,
@@ -145,6 +156,10 @@
 				D246CB8A1833C6D400034DB0 /* SearchViewController.m */,
 				D246CB8C1833C6E000034DB0 /* BookmarkViewController.h */,
 				D246CB8D1833C6E000034DB0 /* BookmarkViewController.m */,
+				D246CB8F1833CDAA00034DB0 /* SearchCell.h */,
+				D246CB901833CDAA00034DB0 /* SearchCell.m */,
+				9267E81D1833D0B6004796FE /* BookmarkCell.h */,
+				9267E81E1833D0B6004796FE /* BookmarkCell.m */,
 			);
 			path = SmartTravel;
 			sourceTree = "<group>";
@@ -185,6 +200,15 @@
 				9267E81A1833CA7F004796FE /* BeaconManager.m */,
 			);
 			name = BeaconManager;
+			sourceTree = "<group>";
+		};
+		D246CB971833D05200034DB0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D246CB931833D04D00034DB0 /* 06-magnify.png */,
+				D246CB941833D04D00034DB0 /* 06-magnify@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,9 +291,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D246CB961833D04D00034DB0 /* 06-magnify@2x.png in Resources */,
 				9267E7F71833C54F004796FE /* Main_iPad.storyboard in Resources */,
 				9267E7FC1833C54F004796FE /* Images.xcassets in Resources */,
 				9267E7F41833C54F004796FE /* Main_iPhone.storyboard in Resources */,
+				D246CB951833D04D00034DB0 /* 06-magnify.png in Resources */,
 				9267E7EB1833C54F004796FE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +319,9 @@
 				9267E7ED1833C54F004796FE /* main.m in Sources */,
 				D246CB8E1833C6E000034DB0 /* BookmarkViewController.m in Sources */,
 				9267E81B1833CA7F004796FE /* BeaconManager.m in Sources */,
+				9267E81F1833D0B6004796FE /* BookmarkCell.m in Sources */,
 				D246CB8B1833C6D400034DB0 /* SearchViewController.m in Sources */,
+				D246CB911833CDAA00034DB0 /* SearchCell.m in Sources */,
 				9267E7FA1833C54F004796FE /* SmartTravelViewController.m in Sources */,
 				D246CB881833C6C800034DB0 /* MapViewController.m in Sources */,
 			);

@@ -35,4 +35,48 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+# pragma mark - table view delegate methods
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return 1;
+}
+
+- (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = [[UITableViewCell alloc] init];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
+
+
+# pragma mark - UISearchDisplayControllerDelegate
+
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString {
+    
+    // Return YES to cause the search result table view to be reloaded.
+    return YES;
+}
+
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchScope:(NSInteger)searchOption {
+    
+    // Return YES to cause the search result table view to be reloaded.
+    return YES;
+}
+
+- (void) searchDisplayControllerDidBeginSearch:(UISearchDisplayController *)controller {
+
+}
+
+
+# pragma mark - filter methods
+
+- (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope {
+    
+}
+
 @end
