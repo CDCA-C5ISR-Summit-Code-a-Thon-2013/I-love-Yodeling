@@ -8,14 +8,15 @@
 
 #import "SearchViewController.h"
 #import "SearchCell.h"
-#import "SearchBarCell.h"
+//#import "SearchBarCell.h"
 #import "Bookmark.h"
 #import "MockData.h"
 
 @interface SearchViewController ()
 
-@property (retain) NSArray *filteredDataArray;
+@property (strong, nonatomic) IBOutlet UIView *searchBarView;
 @property (retain) NSArray *mockDataArray;
+@property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 
 @end
 
@@ -39,7 +40,9 @@
     MockData *mockme = [[MockData alloc] init];
     self.mockDataArray = mockme.loadMockData;
     
-    self.filteredDataArray = [[NSMutableArray alloc] init];
+    self.searchBarView.backgroundColor = [UIColor cyanColor];
+    self.searchTableView.hidden = YES;
+    [self.searchBar setDelegate:self];
     
     [self.searchDisplayController setDisplaysSearchBarInNavigationBar:YES];
     
@@ -57,34 +60,15 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     
-    return 2;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    if (section == 0) {
-        return 1;
-    } else {
-        return [self.mockDataArray count];
-    }
+    return [self.mockDataArray count];
 }
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    if (indexPath.section == 0) {
-        
-        static NSString *CellIdentifier = @"searchBarCell";
-        
-        SearchBarCell *cell = [self.searchTableView dequeueReusableCellWithIdentifier:CellIdentifier];
-        if ( cell == nil ) {
-            cell = [[SearchBarCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-        }
-        
-        cell.backgroundColor = [UIColor purpleColor];
-        
-        return cell;
-        
-    } else {
         
         static NSString *CellIdentifier = @"searchCell";
         
@@ -95,21 +79,14 @@
         
         cell.backgroundColor = [UIColor cyanColor];
         
-        Bookmark *bookmark = nil;
-        if (tableView == self.searchDisplayController.searchResultsTableView) {
-            //If the user is searching, use the list in our filteredList array.
-            bookmark = [self.filteredDataArray objectAtIndex:indexPath.row];
-        } else {
-            bookmark= [self.mockDataArray objectAtIndex:indexPath.row];
-        }
+        Bookmark *bookmark = [self.mockDataArray objectAtIndex:indexPath.row];
         
         cell.businessnameLabel.text = bookmark.location.name;
-        cell.dealLabel.text = bookmark.location.address;
+        cell.dealLabel.text = bookmark.location.dealText;
         cell.businessImage.backgroundColor = [UIColor blackColor];
-        cell.businessImage.image = [UIImage imageNamed:bookmark.location.image];
-        
+//        cell.businessImage.image = [UIImage imageNamed:bookmark.location.image];
+    
         return cell;
-    }
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -132,14 +109,15 @@
 }
 
 - (void) searchDisplayControllerDidBeginSearch:(UISearchDisplayController *)controller {
-
+    
+    [controller.searchResultsTableView setDelegate:self];
 }
 
-
-# pragma mark - filter methods
-
-- (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope {
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
     
+    [self.searchBar resignFirstResponder];
+    [self.searchTableView reloadData];
+    self.searchTableView.hidden = NO;
 }
 
 @end
