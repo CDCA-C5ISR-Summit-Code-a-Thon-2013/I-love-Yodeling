@@ -44,7 +44,7 @@
     [locationArray addObject:[[Location alloc] initWithName:@"Gibbes Museum of Art" andAddress:@"135 Meeting Street" andImage:@"" andLogo:@"gibbeslogo.jpg" andDealText:@"Military rate of $7 ($2 savings)" andCoordinate:CLLocationCoordinate2DMake(32.778985, -79.931322)]];
     
     // Magnolia Plantation and Gardens
-    [locationArray addObject:[[Location alloc] initWithName:@"Magnolia Plantation and Gardens" andAddress:@"3550 Ashley River Road" andImage:@"" andLogo:@"" andDealText:@"$1 off admissions" andCoordinate:CLLocationCoordinate2DMake(32.908793, -80.148559)]];
+    [locationArray addObject:[[Location alloc] initWithName:@"Magnolia Plantation and Gardens" andAddress:@"3550 Ashley River Road" andImage:@"" andLogo:@"magnolialogo.jpg" andDealText:@"$1 off admissions" andCoordinate:CLLocationCoordinate2DMake(32.908793, -80.148559)]];
     
     // Yogi Bear’s Jellystone Park Camp Resorts
     [locationArray addObject:[[Location alloc] initWithName:@"Yogi Bear’s Jellystone Park Camp Resorts" andAddress:@"357 Cedar Creek Rd" andImage:@"" andLogo:@"" andDealText:@"10% off campsites for active military" andCoordinate:CLLocationCoordinate2DMake(33.373384, -79.658863)]];
