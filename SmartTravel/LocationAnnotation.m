@@ -14,8 +14,9 @@
 {
     self = [super init];
     _coordinate = location.coordinate;
-    _name = location.name;
-    _address = location.address;
+    _location = location;
+    _name = _location.name;
+    _address = _location.address;
     _title = _name;
     _subtitle = _address;
     return self;

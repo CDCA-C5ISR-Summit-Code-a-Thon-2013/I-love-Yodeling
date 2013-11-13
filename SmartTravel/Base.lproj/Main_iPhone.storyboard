@@ -135,6 +135,7 @@
                         <outlet property="searchBarView" destination="vQC-M5-48i" id="Bz6-0B-3ve"/>
                         <outlet property="searchTableView" destination="AQD-iu-Qu1" id="ap2-DU-iCs"/>
                         <outlet property="searchViewLabel" destination="hkk-sa-CJm" id="LMy-5A-DRy"/>
+                        <segue destination="7Vw-km-XWY" kind="modal" identifier="showDetails" id="lzl-AJ-pu6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2hN-kY-aoJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -298,4 +299,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="lzl-AJ-pu6"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -11,6 +11,7 @@
 #import "Location.h"
 #import "MockData.h"
 #import "ImageHandler.h"
+#import "BusinessDetailsViewController.h"
 
 @interface SearchViewController ()
 
@@ -19,6 +20,7 @@
 @property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
 @property (strong, nonatomic) IBOutlet UILabel *searchViewLabel;
+@property (strong, nonatomic) Location *selectedLocation;
 
 @end
 
@@ -54,6 +56,7 @@
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
                                    initWithTarget:self
                                    action:@selector(dismissKeyboard)];
+    tap.cancelsTouchesInView = NO;
     
     [self.view addGestureRecognizer:tap];
     
@@ -116,6 +119,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    self.selectedLocation = [self.mockDataArray objectAtIndex:indexPath.row];
+    [self performSegueWithIdentifier:@"showDetails" sender:self];
 }
 
 
@@ -170,6 +175,19 @@
 {
     // add self
     [self.searchBar resignFirstResponder];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    if ([[segue identifier] isEqualToString:@"showDetails"]) {
+        
+        BusinessDetailsViewController *bdvc = [segue destinationViewController];
+
+        bdvc.businessAddress = self.selectedLocation.address;
+        bdvc.businessNameText = self.selectedLocation.name;
+        bdvc.businessDealText = self.selectedLocation.dealText;
+        bdvc.businessImage = [UIImage imageNamed:self.selectedLocation.image];
+    }
 }
 
 @end
