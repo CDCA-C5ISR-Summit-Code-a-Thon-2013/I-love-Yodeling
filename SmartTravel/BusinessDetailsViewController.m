@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *addressLabel;
 @property (weak, nonatomic) IBOutlet UITextView *businessDealLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *businessImageView;
+@property (weak, nonatomic) IBOutlet UIView *contentView;
 @end
 
 @implementation BusinessDetailsViewController
@@ -32,32 +33,31 @@
 {
     [super viewDidLoad];
     
-    UIToolbar *toolBar;
-    toolBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
-    toolBar.frame = CGRectMake(0, 20, 320, 50);
-    toolBar.barStyle = UIBarStyleDefault;
-    [toolBar sizeToFit];
-    UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
-    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithTitle:@"DONE" style:UIBarButtonItemStyleBordered target:self action:@selector(doneAction)];
     
-    
-    NSArray *barButton  =   [[NSArray alloc] initWithObjects:flexibleSpace,doneButton,nil];
-    [toolBar setItems:barButton];
-    
-    [self.view addSubview:toolBar];
-    barButton = nil;
     
     [_businessDealLabel setBackgroundColor:[UIColor colorWithRed:255 green:255 blue:255 alpha:0]];
 
     _addressLabel.text = _businessAddress;
     _businessDealLabel.text = _businessDealText;
     _businessNameLabel.text = _businessNameText;
-    _businessImageView.image = [_businessImage applyBobbyEffect];;
-}
+    _businessImageView.image = [_businessImage applyBobbyEffect];
+    [_contentView setBackgroundColor:[UIColor colorWithRed:255 green:255 blue:255 alpha:.75]];
+    
+//    _businessDealLabel.editable = YES;
+//    _businessDealLabel.font = [UIFont fontWithName:@"System" size:40];
+    
+    _businessDealLabel.text = _businessDealText;
+    [_businessDealLabel setFont:[UIFont fontWithName:@"Helvetica Neue" size:20.0f]];
+    _businessDealLabel.textColor = [UIColor blackColor];
+    
+    [_contentView.layer setCornerRadius:30];
 
--(void)doneAction{
+//    _businessDealLabel.editable = NO;
+}
+- (IBAction)donePressed:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
 
 
 - (void)didReceiveMemoryWarning
