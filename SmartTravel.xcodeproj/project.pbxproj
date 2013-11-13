@@ -40,6 +40,7 @@
 		D61E1F451833E2F500A42013 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = D61E1F441833E2F500A42013 /* Location.m */; };
 		D61E1F481833FB2300A42013 /* 722-location-pin.png in Resources */ = {isa = PBXBuildFile; fileRef = D61E1F461833FB2300A42013 /* 722-location-pin.png */; };
 		D61E1F491833FB2300A42013 /* 722-location-pin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D61E1F471833FB2300A42013 /* 722-location-pin@2x.png */; };
+		D61E1F4C1833FE0700A42013 /* ImageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D61E1F4B1833FE0700A42013 /* ImageHandler.m */; };
 		D6C9386C1833D33B0083F04F /* LocationAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C9386B1833D33B0083F04F /* LocationAnnotation.m */; };
 		D6CBEDDC1833CB3F0093A175 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6CBEDDB1833CB3F0093A175 /* MapKit.framework */; };
 /* End PBXBuildFile section */
@@ -105,6 +106,8 @@
 		D61E1F441833E2F500A42013 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		D61E1F461833FB2300A42013 /* 722-location-pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "722-location-pin.png"; path = "../../../Downloads/Glyphish 6/Glyphish 6 Icons (PNG)/Gray/722-location-pin.png"; sourceTree = "<group>"; };
 		D61E1F471833FB2300A42013 /* 722-location-pin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "722-location-pin@2x.png"; path = "../../../Downloads/Glyphish 6/Glyphish 6 Icons (PNG)/Gray/722-location-pin@2x.png"; sourceTree = "<group>"; };
+		D61E1F4A1833FE0700A42013 /* ImageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageHandler.h; sourceTree = "<group>"; };
+		D61E1F4B1833FE0700A42013 /* ImageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageHandler.m; sourceTree = "<group>"; };
 		D6C9386A1833D33B0083F04F /* LocationAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationAnnotation.h; sourceTree = "<group>"; };
 		D6C9386B1833D33B0083F04F /* LocationAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationAnnotation.m; sourceTree = "<group>"; };
 		D6CBEDDB1833CB3F0093A175 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -195,6 +198,8 @@
 				D61E1F441833E2F500A42013 /* Location.m */,
 				92C6C5141833E40A00743214 /* BusinessDetailsViewController.h */,
 				92C6C5151833E40A00743214 /* BusinessDetailsViewController.m */,
+				D61E1F4A1833FE0700A42013 /* ImageHandler.h */,
+				D61E1F4B1833FE0700A42013 /* ImageHandler.m */,
 			);
 			path = SmartTravel;
 			sourceTree = "<group>";
@@ -367,6 +372,7 @@
 				9267E81B1833CA7F004796FE /* BeaconManager.m in Sources */,
 				92C6C5161833E40A00743214 /* BusinessDetailsViewController.m in Sources */,
 				D2F22CE81833DDD700B63DBE /* SearchBarCell.m in Sources */,
+				D61E1F4C1833FE0700A42013 /* ImageHandler.m in Sources */,
 				9267E81F1833D0B6004796FE /* BookmarkCell.m in Sources */,
 				D61E1F451833E2F500A42013 /* Location.m in Sources */,
 				D6C9386C1833D33B0083F04F /* LocationAnnotation.m in Sources */,

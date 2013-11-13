@@ -11,6 +11,7 @@
 #import "MapViewController.h"
 #import "MockData.h"
 #import "BeaconManager.h"
+#import "ImageHandler.h"
 
 @interface MapViewController ()
 
@@ -46,8 +47,6 @@
     
     // add annotations
     [self addAnnotations];
-    
-    
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -60,6 +59,13 @@
     [_mapView setCenterCoordinate:coordinate animated:FALSE];
     MKCoordinateRegion region = MKCoordinateRegionMake(coordinate, MKCoordinateSpanMake(0.5, 0.5));
     [_mapView setRegion:region];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    // snapshot
+    MockData *mockData = [[MockData alloc] init];
+    [ImageHandler storeMapImage:[mockData blurSnapshotLightEffect:self]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -76,9 +82,6 @@
     MockData *mockData = [[MockData alloc] init];
     LocationAnnotation *annotation = nil;
     NSArray *locationArray = [mockData getLocationData];
-    
-    // snapshot
-//    [mockData blurSnapshotLightEffect:self];
     
     // add every location within our mock data set to our map
     for (int i = 0; i < [locationArray count]; i++)
