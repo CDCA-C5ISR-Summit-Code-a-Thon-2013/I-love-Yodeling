@@ -187,9 +187,9 @@
         Location *location;
         
         if ([_tempBeaconMinor isEqualToString:@"1"]) {
-            location = data[0];
+            location = [data firstObject];
         } else {
-            location = data[1];
+            location = [data lastObject];
         }
         
         _tempBeaconMinor = nil;
