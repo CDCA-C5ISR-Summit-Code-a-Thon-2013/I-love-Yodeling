@@ -42,6 +42,7 @@
 		D2F22CFC18341FB500B63DBE /* marketpavilionlogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2F22CFB18341FB500B63DBE /* marketpavilionlogo.jpg */; };
 		D2F22CFE183420BB00B63DBE /* millshouselogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2F22CFD183420BB00B63DBE /* millshouselogo.jpg */; };
 		D2F22D001834226B00B63DBE /* holidayinnlogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2F22CFF1834226B00B63DBE /* holidayinnlogo.jpg */; };
+		D2F22D021834236100B63DBE /* gibbeslogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2F22D011834236100B63DBE /* gibbeslogo.jpg */; };
 		D61E1F451833E2F500A42013 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = D61E1F441833E2F500A42013 /* Location.m */; };
 		D61E1F4C1833FE0700A42013 /* ImageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D61E1F4B1833FE0700A42013 /* ImageHandler.m */; };
 		D61E1F4F1833FF3400A42013 /* 722-location-pin.png in Resources */ = {isa = PBXBuildFile; fileRef = D61E1F4D1833FF3400A42013 /* 722-location-pin.png */; };
@@ -113,6 +114,7 @@
 		D2F22CFB18341FB500B63DBE /* marketpavilionlogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = marketpavilionlogo.jpg; sourceTree = "<group>"; };
 		D2F22CFD183420BB00B63DBE /* millshouselogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = millshouselogo.jpg; sourceTree = "<group>"; };
 		D2F22CFF1834226B00B63DBE /* holidayinnlogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = holidayinnlogo.jpg; sourceTree = "<group>"; };
+		D2F22D011834236100B63DBE /* gibbeslogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gibbeslogo.jpg; sourceTree = "<group>"; };
 		D61E1F431833E2F500A42013 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		D61E1F441833E2F500A42013 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		D61E1F4A1833FE0700A42013 /* ImageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageHandler.h; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 		D246CB971833D05200034DB0 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D2F22D011834236100B63DBE /* gibbeslogo.jpg */,
 				D2F22CFF1834226B00B63DBE /* holidayinnlogo.jpg */,
 				D2F22CFD183420BB00B63DBE /* millshouselogo.jpg */,
 				D2F22CFB18341FB500B63DBE /* marketpavilionlogo.jpg */,
@@ -367,6 +370,7 @@
 				D2F22CFC18341FB500B63DBE /* marketpavilionlogo.jpg in Resources */,
 				9267E7FC1833C54F004796FE /* Images.xcassets in Resources */,
 				9267E7F41833C54F004796FE /* Main_iPhone.storyboard in Resources */,
+				D2F22D021834236100B63DBE /* gibbeslogo.jpg in Resources */,
 				D2F22CFE183420BB00B63DBE /* millshouselogo.jpg in Resources */,
 				D61E1F4F1833FF3400A42013 /* 722-location-pin.png in Resources */,
 				D2F22CF618341CC300B63DBE /* outbacklogo.jpg in Resources */,

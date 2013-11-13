@@ -41,7 +41,7 @@
     [locationArray addObject:[[Location alloc] initWithName:@"Holiday Inn Express Hotel" andAddress:@"350 Johnnie Dodds Boulevard" andImage:@"" andLogo:@"holidayinnlogo.jpg" andDealText:@"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec nibh ac leo blandit vestibulum in quis turpis. Nunc convallis consectetur tortor eu sodales. Sed ut enim dolor. Vestibulum vitae sodales tellus. Cras vulputate odio vel feugiat eleifend. Duis in est quis erat dapibus pulvinar vel id tortor. Curabitur et porttitor ante, nec interdum lectus. Fusce a mauris et eros tristique ultrices nec non nisl." andCoordinate:CLLocationCoordinate2DMake(32.80478, -79.892934)]];
     
     // Gibbes Museum of Art
-    [locationArray addObject:[[Location alloc] initWithName:@"Gibbes Museum of Art" andAddress:@"135 Meeting Street" andImage:@"" andLogo:@"" andDealText:@"Military rate of $7 ($2 savings)" andCoordinate:CLLocationCoordinate2DMake(32.778985, -79.931322)]];
+    [locationArray addObject:[[Location alloc] initWithName:@"Gibbes Museum of Art" andAddress:@"135 Meeting Street" andImage:@"" andLogo:@"gibbeslogo.jpg" andDealText:@"Military rate of $7 ($2 savings)" andCoordinate:CLLocationCoordinate2DMake(32.778985, -79.931322)]];
     
     // Magnolia Plantation and Gardens
     [locationArray addObject:[[Location alloc] initWithName:@"Magnolia Plantation and Gardens" andAddress:@"3550 Ashley River Road" andImage:@"" andLogo:@"" andDealText:@"$1 off admissions" andCoordinate:CLLocationCoordinate2DMake(32.908793, -80.148559)]];
