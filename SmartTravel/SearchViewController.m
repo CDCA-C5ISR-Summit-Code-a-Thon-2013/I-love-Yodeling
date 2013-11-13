@@ -10,7 +10,6 @@
 #import "SearchCell.h"
 #import "Bookmark.h"
 #import "MockData.h"
-//#import "UIImage+ImageEffects.h"
 #import "ImageHandler.h"
 
 @interface SearchViewController ()
@@ -142,9 +141,20 @@
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
     
     [self.searchBar resignFirstResponder];
-    [self.searchTableView reloadData];
-    self.searchViewLabel.hidden = YES;
-    self.searchTableView.hidden = NO;
+    
+    if ([searchBar.text isEqual: @"29412"]) {
+        
+        [self.searchTableView reloadData];
+        self.searchViewLabel.hidden = YES;
+        self.searchTableView.hidden = NO;
+        
+    } else {
+        
+        self.searchTableView.hidden = YES;
+        self.searchViewLabel.hidden = NO;
+        self.searchViewLabel.text = @"Sorry!  No deals found in this area. :(";
+    }
+    
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
