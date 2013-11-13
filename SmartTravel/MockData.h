@@ -11,6 +11,7 @@
 
 @interface MockData : NSObject
 
+- (NSArray*) getLocationData;
 - (NSArray *) loadMockData;
 
 @end

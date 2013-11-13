@@ -9,6 +9,7 @@
 #import "LocationAnnotation.h"
 #import <MapKit/MapKit.h>
 #import "MapViewController.h"
+#import "MockData.h"
 #import "BeaconManager.h"
 
 @interface MapViewController ()
@@ -69,38 +70,33 @@
 
 - (void)addAnnotations
 {
-    // Applebee's - Ashley Phosphate
-//    32.918088,-80.103746
-//    CLLocationCoordinate2D coordinate;
-//    coordinate = CLLocationCoordinate2DMake(32.918088, -80.103746);
-//    MKAnnotationView *annotation = MKAnnotat
-//    _mapView addAnnotation:<#(id<MKAnnotation>)#>
-    
     Location *location = nil;
+    MockData *mockData = [[MockData alloc] init];
     LocationAnnotation *annotation = nil;
+    NSArray *locationArray = [mockData getLocationData];
     
     // Applebee's 4910 Ashley Phosphate Road
-    location = [[Location alloc] initWithName:@"Applebee's" andAddress:@"4910 Ashley Phosphate Road" andCoordinate:CLLocationCoordinate2DMake(32.918088, -80.103746)];
+    location = [locationArray objectAtIndex:0];
     annotation = [[LocationAnnotation alloc] initWithLocation:location];
     [_mapView addAnnotation:annotation];
     
     // Outback 32.95452,-80.038254 7643 Rivers Avenue
-    location = [[Location alloc] initWithName:@"Outback Steakhouse" andAddress:@"7643 Rivers Avenue" andCoordinate:CLLocationCoordinate2DMake(32.95452, -80.038254)];
+    location = [locationArray objectAtIndex:1];
     annotation = [[LocationAnnotation alloc] initWithLocation:location];
     [_mapView addAnnotation:annotation];
     
     // Outback 32.814401,-80.025895 1890 Sam Rittenberg Boulevard
-    location = [[Location alloc] initWithName:@"Outback Steakhouse" andAddress:@"1890 Sam Rittenberg Boulevard" andCoordinate:CLLocationCoordinate2DMake(32.814401, -80.025895)];
+    location = [locationArray objectAtIndex:2];
     annotation = [[LocationAnnotation alloc] initWithLocation:location];
     [_mapView addAnnotation:annotation];
     
     // Outback 32.825942,-79.880326 715 Johnnie Dodds Boulevard
-    location = [[Location alloc] initWithName:@"Outback Steakhouse" andAddress:@"715 Johnnie Dodds Boulevard" andCoordinate:CLLocationCoordinate2DMake(32.825942, -79.880326)];
+    location = [locationArray objectAtIndex:3];
     annotation = [[LocationAnnotation alloc] initWithLocation:location];
     [_mapView addAnnotation:annotation];
     
     // Page's (32.791189,-79.877175) Okra Grill 302 Coleman Boulevard
-    location = [[Location alloc] initWithName:@"Page's Okra Grill" andAddress:@"302 Coleman Boulevard" andCoordinate:CLLocationCoordinate2DMake(32.791189, -79.877175)];
+    location = [locationArray objectAtIndex:4];
     annotation = [[LocationAnnotation alloc] initWithLocation:location];
     [_mapView addAnnotation:annotation];
 }
