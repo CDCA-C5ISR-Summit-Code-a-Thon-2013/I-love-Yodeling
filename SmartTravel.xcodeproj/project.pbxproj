@@ -36,6 +36,7 @@
 		D2F22CE81833DDD700B63DBE /* SearchBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F22CE71833DDD700B63DBE /* SearchBarCell.m */; };
 		D2F22CED1833E13200B63DBE /* MockData.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F22CEC1833E13200B63DBE /* MockData.m */; };
 		D2F22CF01833FA6700B63DBE /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F22CEF1833FA6700B63DBE /* UIImage+ImageEffects.m */; };
+		D2F22CF618341CC300B63DBE /* outbacklogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2F22CF518341CC300B63DBE /* outbacklogo.jpg */; };
 		D61E1F451833E2F500A42013 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = D61E1F441833E2F500A42013 /* Location.m */; };
 		D61E1F4C1833FE0700A42013 /* ImageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D61E1F4B1833FE0700A42013 /* ImageHandler.m */; };
 		D61E1F4F1833FF3400A42013 /* 722-location-pin.png in Resources */ = {isa = PBXBuildFile; fileRef = D61E1F4D1833FF3400A42013 /* 722-location-pin.png */; };
@@ -101,6 +102,7 @@
 		D2F22CEC1833E13200B63DBE /* MockData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockData.m; sourceTree = "<group>"; };
 		D2F22CEE1833FA6700B63DBE /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		D2F22CEF1833FA6700B63DBE /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		D2F22CF518341CC300B63DBE /* outbacklogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = outbacklogo.jpg; sourceTree = "<group>"; };
 		D61E1F431833E2F500A42013 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		D61E1F441833E2F500A42013 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		D61E1F4A1833FE0700A42013 /* ImageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageHandler.h; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 		D246CB971833D05200034DB0 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D2F22CF518341CC300B63DBE /* outbacklogo.jpg */,
 				D61E1F5C1834182600A42013 /* 726-star-selected.png */,
 				D61E1F5D1834182600A42013 /* 726-star-selected@2x.png */,
 				928CB23D183405170048266E /* outback.JPG */,
@@ -347,6 +350,7 @@
 				9267E7FC1833C54F004796FE /* Images.xcassets in Resources */,
 				9267E7F41833C54F004796FE /* Main_iPhone.storyboard in Resources */,
 				D61E1F4F1833FF3400A42013 /* 722-location-pin.png in Resources */,
+				D2F22CF618341CC300B63DBE /* outbacklogo.jpg in Resources */,
 				9267E82D1833DF73004796FE /* star.png in Resources */,
 				D61E1F5F1834182600A42013 /* 726-star-selected@2x.png in Resources */,
 				D61E1F501833FF3400A42013 /* 722-location-pin@2x.png in Resources */,
