@@ -9,8 +9,13 @@
 #import "SearchViewController.h"
 #import "SearchCell.h"
 #import "SearchBarCell.h"
+#import "Bookmark.h"
+#import "MockData.h"
 
 @interface SearchViewController ()
+
+@property (retain) NSArray *filteredDataArray;
+@property (retain) NSArray *mockDataArray;
 
 @end
 
@@ -30,7 +35,15 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    //load up mock data
+    MockData *mockme = [[MockData alloc] init];
+    self.mockDataArray = mockme.loadMockData;
+    
+    self.filteredDataArray = [[NSMutableArray alloc] init];
+    
     [self.searchDisplayController setDisplaysSearchBarInNavigationBar:YES];
+    
+    [self.searchTableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -47,7 +60,7 @@
     if (section == 0) {
         return 1;
     } else {
-        return 1;
+        return [self.mockDataArray count];
     }
 }
 
@@ -72,6 +85,17 @@
         if ( cell == nil ) {
             cell = [[SearchCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         }
+        
+        Bookmark *bookmark = nil;
+        if (tableView == self.searchDisplayController.searchResultsTableView) {
+            //If the user is searching, use the list in our filteredList array.
+            bookmark = [self.filteredDataArray objectAtIndex:indexPath.row];
+        } else {
+            bookmark= [self.mockDataArray objectAtIndex:indexPath.row];
+        }
+        
+        cell.businessnameLabel.text = bookmark.businessname;
+        cell.dealLabel.text = bookmark.dealText;
         
         return cell;
     }
