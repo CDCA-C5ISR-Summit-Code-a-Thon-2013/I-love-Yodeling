@@ -10,6 +10,10 @@
 
 @interface BusinessDetailsViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *businessNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *addressLabel;
+@property (weak, nonatomic) IBOutlet UITextView *businessDealLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *businessImageView;
 @end
 
 @implementation BusinessDetailsViewController
@@ -41,9 +45,11 @@
     
     [self.view addSubview:toolBar];
     barButton = nil;
-    [super viewDidLoad];
 
-	// Do any additional setup after loading the view.
+    _addressLabel.text = _businessAddress;
+    _businessDealLabel.text = _businessDealText;
+    _businessNameLabel.text = _businessNameText;
+    _businessImageView.image = _businessImage;
 }
 
 -(void)doneAction{
