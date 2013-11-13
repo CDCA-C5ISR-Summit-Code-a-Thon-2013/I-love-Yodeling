@@ -21,7 +21,7 @@
 @property (nonatomic, strong) IBOutlet MKMapView *mapView;
 @property (nonatomic, strong) BeaconManager *beaconManager;
 @property (nonatomic, strong) NSString *tempBeaconMinor;
-@property (nonatomic, strong) NSMutableDictionary *locationHash;
+@property (nonatomic, strong) Location *selectedLocation;
 
 @end
 
@@ -39,8 +39,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    _locationHash = [[NSMutableDictionary alloc] init];
     
     _beaconManager = [[BeaconManager alloc] initWithUUID:@"9f1fcde8-47c2-11e3-86ae-ce3f5508acd9" identifier:@"com.smarttravel"];
     _beaconManager.delegate = self;
@@ -63,6 +61,11 @@
     [_mapView setCenterCoordinate:coordinate animated:FALSE];
     MKCoordinateRegion region = MKCoordinateRegionMake(coordinate, MKCoordinateSpanMake(0.5, 0.5));
     [_mapView setRegion:region];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    _selectedLocation = nil;
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -112,6 +115,10 @@
         NSInteger index = [mockData indexOfLocation:location];
         [button setTag:index];
         annotationView.rightCalloutAccessoryView = button;
+        UIButton *infoButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+        [infoButton addTarget:self action:@selector(showInfoButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+        [infoButton setTag:index];
+        annotationView.leftCalloutAccessoryView = infoButton;
         
         // is this location bookmarked?
         if ([BookmarkManager isLocationBookmarked:location])
@@ -156,6 +163,16 @@
     }
 }
 
+- (void)showInfoButtonClicked:(id)sender
+{
+    UIButton *button = (UIButton*)sender;
+    int index = button.tag;
+    MockData *mockData = [[MockData alloc] init];
+    Location *location = [mockData getLocationAtIndex:index];
+    _selectedLocation = location;
+    [self performSegueWithIdentifier:@"showDetails" sender:self];
+}
+                                                    
 #pragma mark - beacon delegate methods
 
 -(void)didEnterRegion:(CLRegion *)region{
@@ -186,10 +203,17 @@
         NSArray *data = [mockData getLocationData];
         Location *location;
         
-        if ([_tempBeaconMinor isEqualToString:@"1"]) {
-            location = [data firstObject];
-        } else {
-            location = [data lastObject];
+        if (_selectedLocation == nil)
+        {
+            if ([_tempBeaconMinor isEqualToString:@"1"]) {
+                location = data[0];
+            } else {
+                location = data[1];
+            }
+        }
+        else
+        {
+            location = _selectedLocation;
         }
         
         _tempBeaconMinor = nil;
@@ -199,6 +223,5 @@
         bdvc.businessImage = [UIImage imageNamed:location.image];
     }
 }
-
 
 @end
