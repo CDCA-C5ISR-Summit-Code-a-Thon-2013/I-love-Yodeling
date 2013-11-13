@@ -135,7 +135,11 @@
 }
 
 -(void)didFindBeacons:(NSArray *)beacons{
-    NSLog(@"Did find beacons %i",[beacons count]);
+    CLBeacon *closestBeacon = [beacons firstObject];
+    
+    if (closestBeacon.proximity == CLProximityNear || closestBeacon.proximity == CLProximityImmediate) {
+        [self performSegueWithIdentifier:@"showDetails" sender:self];
+    }
 }
 
 @end
