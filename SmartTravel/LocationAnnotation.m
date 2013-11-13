@@ -10,12 +10,12 @@
 
 @implementation LocationAnnotation
 
-- (id)initWithCoordinate:(CLLocationCoordinate2D)coordinate andName:(NSString*)name andAddress:(NSString*)address
+- (id)initWithLocation:(Location*)location
 {
     self = [super init];
-    _coordinate = coordinate;
-    _name = name;
-    _address = address;
+    _coordinate = location.coordinate;
+    _name = location.name;
+    _address = location.address;
     _title = _name;
     _subtitle = _address;
     return self;

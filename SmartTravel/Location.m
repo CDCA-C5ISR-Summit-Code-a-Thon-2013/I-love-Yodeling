@@ -10,4 +10,13 @@
 
 @implementation Location
 
+- (id)initWithName:(NSString*)name andAddress:(NSString*)address andCoordinate:(CLLocationCoordinate2D)coordinate
+{
+    self = [super init];
+    _name = name;
+    _address = address;
+    _coordinate = coordinate;
+    return self;
+}
+
 @end
