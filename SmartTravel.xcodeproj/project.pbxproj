@@ -26,6 +26,7 @@
 		D246CB881833C6C800034DB0 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D246CB871833C6C800034DB0 /* MapViewController.m */; };
 		D246CB8B1833C6D400034DB0 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D246CB8A1833C6D400034DB0 /* SearchViewController.m */; };
 		D246CB8E1833C6E000034DB0 /* BookmarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D246CB8D1833C6E000034DB0 /* BookmarkViewController.m */; };
+		D246CB911833CDAA00034DB0 /* SearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D246CB901833CDAA00034DB0 /* SearchCell.m */; };
 		D6CBEDDC1833CB3F0093A175 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6CBEDDB1833CB3F0093A175 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,8 @@
 		D246CB8A1833C6D400034DB0 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		D246CB8C1833C6E000034DB0 /* BookmarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkViewController.h; sourceTree = "<group>"; };
 		D246CB8D1833C6E000034DB0 /* BookmarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkViewController.m; sourceTree = "<group>"; };
+		D246CB8F1833CDAA00034DB0 /* SearchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCell.h; sourceTree = "<group>"; };
+		D246CB901833CDAA00034DB0 /* SearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCell.m; sourceTree = "<group>"; };
 		D6CBEDDB1833CB3F0093A175 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -145,6 +148,8 @@
 				D246CB8A1833C6D400034DB0 /* SearchViewController.m */,
 				D246CB8C1833C6E000034DB0 /* BookmarkViewController.h */,
 				D246CB8D1833C6E000034DB0 /* BookmarkViewController.m */,
+				D246CB8F1833CDAA00034DB0 /* SearchCell.h */,
+				D246CB901833CDAA00034DB0 /* SearchCell.m */,
 			);
 			path = SmartTravel;
 			sourceTree = "<group>";
@@ -291,6 +296,7 @@
 				D246CB8E1833C6E000034DB0 /* BookmarkViewController.m in Sources */,
 				9267E81B1833CA7F004796FE /* BeaconManager.m in Sources */,
 				D246CB8B1833C6D400034DB0 /* SearchViewController.m in Sources */,
+				D246CB911833CDAA00034DB0 /* SearchCell.m in Sources */,
 				9267E7FA1833C54F004796FE /* SmartTravelViewController.m in Sources */,
 				D246CB881833C6C800034DB0 /* MapViewController.m in Sources */,
 			);
