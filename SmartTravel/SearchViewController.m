@@ -103,10 +103,10 @@
             bookmark= [self.mockDataArray objectAtIndex:indexPath.row];
         }
         
-        cell.businessnameLabel.text = bookmark.businessname;
-        cell.dealLabel.text = bookmark.dealText;
+        cell.businessnameLabel.text = bookmark.location.name;
+        cell.dealLabel.text = bookmark.location.address;
         cell.businessImage.backgroundColor = [UIColor blackColor];
-        cell.businessImage.image = [UIImage imageNamed:bookmark.businessImagePath];
+        cell.businessImage.image = [UIImage imageNamed:bookmark.location.image];
         
         return cell;
     }
