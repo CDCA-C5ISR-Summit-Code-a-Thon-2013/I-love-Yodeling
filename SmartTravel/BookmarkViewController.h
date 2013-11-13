@@ -10,4 +10,6 @@
 
 @interface BookmarkViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
+@property (strong, nonatomic) NSMutableArray *bookmarks;
+
 @end
