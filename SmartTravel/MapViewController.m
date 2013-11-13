@@ -75,30 +75,13 @@
     LocationAnnotation *annotation = nil;
     NSArray *locationArray = [mockData getLocationData];
     
-    // Applebee's 4910 Ashley Phosphate Road
-    location = [locationArray objectAtIndex:0];
-    annotation = [[LocationAnnotation alloc] initWithLocation:location];
-    [_mapView addAnnotation:annotation];
-    
-    // Outback 32.95452,-80.038254 7643 Rivers Avenue
-    location = [locationArray objectAtIndex:1];
-    annotation = [[LocationAnnotation alloc] initWithLocation:location];
-    [_mapView addAnnotation:annotation];
-    
-    // Outback 32.814401,-80.025895 1890 Sam Rittenberg Boulevard
-    location = [locationArray objectAtIndex:2];
-    annotation = [[LocationAnnotation alloc] initWithLocation:location];
-    [_mapView addAnnotation:annotation];
-    
-    // Outback 32.825942,-79.880326 715 Johnnie Dodds Boulevard
-    location = [locationArray objectAtIndex:3];
-    annotation = [[LocationAnnotation alloc] initWithLocation:location];
-    [_mapView addAnnotation:annotation];
-    
-    // Page's (32.791189,-79.877175) Okra Grill 302 Coleman Boulevard
-    location = [locationArray objectAtIndex:4];
-    annotation = [[LocationAnnotation alloc] initWithLocation:location];
-    [_mapView addAnnotation:annotation];
+    // add every location within our mock data set to our map
+    for (int i = 0; i < [locationArray count]; i++)
+    {
+        location = [locationArray objectAtIndex:i];
+        annotation = [[LocationAnnotation alloc] initWithLocation:location];
+        [_mapView addAnnotation:annotation];
+    }
 }
 
 #pragma mark - MKMapViewDelegate functions
