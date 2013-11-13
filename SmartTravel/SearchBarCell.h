@@ -1,5 +1,5 @@
 //
-//  BookmarkViewController.h
+//  SearchBarCell.h
 //  SmartTravel
 //
 //  Created by Adam C. Smith on 11/13/13.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BookmarkViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@interface SearchBarCell : UITableViewCell
+
+@property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 
 @end

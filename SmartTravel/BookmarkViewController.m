@@ -7,9 +7,12 @@
 //
 
 #import "BookmarkViewController.h"
+#import "SearchCell.h"
+#import "Bookmark.h"
 
 @interface BookmarkViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *bookmarkTable;
+@property (strong, nonatomic) NSMutableArray *bookmarks;
 @end
 
 @implementation BookmarkViewController
@@ -34,5 +37,21 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    Bookmark *bookmark = [_bookmarks objectAtIndex:[indexPath row]];
+    
+    SearchCell *bookmarkCell = [self.bookmarkTable dequeueReusableCellWithIdentifier:@"bookmarkCell"];
+    bookmarkCell.businessnameLabel.text = bookmark.businessname;
+    bookmarkCell.dealLabel.text = bookmark.dealText;
+    return bookmarkCell;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 0;
+}
+
 
 @end

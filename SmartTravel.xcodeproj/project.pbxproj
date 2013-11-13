@@ -24,6 +24,7 @@
 		9267E80F1833C550004796FE /* SmartTravelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9267E80E1833C550004796FE /* SmartTravelTests.m */; };
 		9267E81B1833CA7F004796FE /* BeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9267E81A1833CA7F004796FE /* BeaconManager.m */; };
 		9267E81F1833D0B6004796FE /* BookmarkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9267E81E1833D0B6004796FE /* BookmarkCell.m */; };
+		9267E8221833D3FA004796FE /* Bookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 9267E8211833D3FA004796FE /* Bookmark.m */; };
 		D246CB881833C6C800034DB0 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D246CB871833C6C800034DB0 /* MapViewController.m */; };
 		D246CB8B1833C6D400034DB0 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D246CB8A1833C6D400034DB0 /* SearchViewController.m */; };
 		D246CB8E1833C6E000034DB0 /* BookmarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D246CB8D1833C6E000034DB0 /* BookmarkViewController.m */; };
@@ -31,6 +32,7 @@
 		D246CB951833D04D00034DB0 /* 06-magnify.png in Resources */ = {isa = PBXBuildFile; fileRef = D246CB931833D04D00034DB0 /* 06-magnify.png */; };
 		D246CB961833D04D00034DB0 /* 06-magnify@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D246CB941833D04D00034DB0 /* 06-magnify@2x.png */; };
 		D6C9386C1833D33B0083F04F /* LocationAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C9386B1833D33B0083F04F /* LocationAnnotation.m */; };
+		D2F22CE81833DDD700B63DBE /* SearchBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F22CE71833DDD700B63DBE /* SearchBarCell.m */; };
 		D6CBEDDC1833CB3F0093A175 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6CBEDDB1833CB3F0093A175 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9267E7DD1833C54F004796FE /* SmartTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9267E7DD1833C54F004796FE /* SmartTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = SmartTravel.app; path = "/Users/adamcsmith/Projects/Yodeling/build/Debug-iphoneos/SmartTravel.app"; sourceTree = "<absolute>"; };
 		9267E7E01833C54F004796FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9267E7E21833C54F004796FE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		9267E7E41833C54F004796FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -60,7 +62,7 @@
 		9267E7F81833C54F004796FE /* SmartTravelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartTravelViewController.h; sourceTree = "<group>"; };
 		9267E7F91833C54F004796FE /* SmartTravelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartTravelViewController.m; sourceTree = "<group>"; };
 		9267E7FB1833C54F004796FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		9267E8011833C54F004796FE /* SmartTravelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartTravelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9267E8011833C54F004796FE /* SmartTravelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SmartTravelTests.xctest; path = "/Users/adamcsmith/Projects/Yodeling/build/Debug-iphoneos/SmartTravelTests.xctest"; sourceTree = "<absolute>"; };
 		9267E8021833C54F004796FE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9267E80A1833C54F004796FE /* SmartTravelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SmartTravelTests-Info.plist"; sourceTree = "<group>"; };
 		9267E80C1833C54F004796FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -69,6 +71,8 @@
 		9267E81A1833CA7F004796FE /* BeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconManager.m; sourceTree = "<group>"; };
 		9267E81D1833D0B6004796FE /* BookmarkCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkCell.h; sourceTree = "<group>"; };
 		9267E81E1833D0B6004796FE /* BookmarkCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkCell.m; sourceTree = "<group>"; };
+		9267E8201833D3FA004796FE /* Bookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bookmark.h; sourceTree = "<group>"; };
+		9267E8211833D3FA004796FE /* Bookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bookmark.m; sourceTree = "<group>"; };
 		D246CB861833C6C800034DB0 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		D246CB871833C6C800034DB0 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		D246CB891833C6D400034DB0 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 		D246CB941833D04D00034DB0 /* 06-magnify@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "06-magnify@2x.png"; sourceTree = "<group>"; };
 		D6C9386A1833D33B0083F04F /* LocationAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationAnnotation.h; sourceTree = "<group>"; };
 		D6C9386B1833D33B0083F04F /* LocationAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationAnnotation.m; sourceTree = "<group>"; };
+		D2F22CE61833DDD700B63DBE /* SearchBarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBarCell.h; sourceTree = "<group>"; };
+		D2F22CE71833DDD700B63DBE /* SearchBarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBarCell.m; sourceTree = "<group>"; };
 		D6CBEDDB1833CB3F0093A175 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -115,17 +121,7 @@
 				9267E7E61833C54F004796FE /* SmartTravel */,
 				9267E8081833C54F004796FE /* SmartTravelTests */,
 				9267E7DF1833C54F004796FE /* Frameworks */,
-				9267E7DE1833C54F004796FE /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		9267E7DE1833C54F004796FE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9267E7DD1833C54F004796FE /* SmartTravel.app */,
-				9267E8011833C54F004796FE /* SmartTravelTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		9267E7DF1833C54F004796FE /* Frameworks */ = {
@@ -143,6 +139,8 @@
 		9267E7E61833C54F004796FE /* SmartTravel */ = {
 			isa = PBXGroup;
 			children = (
+				D2F22CE61833DDD700B63DBE /* SearchBarCell.h */,
+				D2F22CE71833DDD700B63DBE /* SearchBarCell.m */,
 				D246CB971833D05200034DB0 /* Images */,
 				9267E8181833CA53004796FE /* BeaconManager */,
 				9267E7EF1833C54F004796FE /* SmartTravelAppDelegate.h */,
@@ -165,6 +163,8 @@
 				9267E81E1833D0B6004796FE /* BookmarkCell.m */,
 				D6C9386A1833D33B0083F04F /* LocationAnnotation.h */,
 				D6C9386B1833D33B0083F04F /* LocationAnnotation.m */,
+				9267E8201833D3FA004796FE /* Bookmark.h */,
+				9267E8211833D3FA004796FE /* Bookmark.m */,
 			);
 			path = SmartTravel;
 			sourceTree = "<group>";
@@ -281,7 +281,7 @@
 				Base,
 			);
 			mainGroup = 9267E7D41833C54F004796FE;
-			productRefGroup = 9267E7DE1833C54F004796FE /* Products */;
+			productRefGroup = 9267E7D41833C54F004796FE;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -323,7 +323,9 @@
 				9267E7F11833C54F004796FE /* SmartTravelAppDelegate.m in Sources */,
 				9267E7ED1833C54F004796FE /* main.m in Sources */,
 				D246CB8E1833C6E000034DB0 /* BookmarkViewController.m in Sources */,
+				9267E8221833D3FA004796FE /* Bookmark.m in Sources */,
 				9267E81B1833CA7F004796FE /* BeaconManager.m in Sources */,
+				D2F22CE81833DDD700B63DBE /* SearchBarCell.m in Sources */,
 				9267E81F1833D0B6004796FE /* BookmarkCell.m in Sources */,
 				D6C9386C1833D33B0083F04F /* LocationAnnotation.m in Sources */,
 				D246CB8B1833C6D400034DB0 /* SearchViewController.m in Sources */,
