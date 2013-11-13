@@ -65,12 +65,29 @@
     locationCell.businessnameLabel.text = location.name;
     locationCell.locationLabel.text = location.dealText;
     [locationCell.businessImage setBackgroundColor:[UIColor blackColor]];
+    UISwipeGestureRecognizer * Swipeleft= [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeLeft:)];
+    Swipeleft.direction=UISwipeGestureRecognizerDirectionLeft;
+    [locationCell addGestureRecognizer:Swipeleft];
     return locationCell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [BookmarkManager bookmarkCount];
+}
+
+- (void)swipeLeft:(id)sender
+{
+    if ([sender isKindOfClass:[UITableViewCell class]])
+    {
+    NSIndexPath *indexPath = [_bookmarkTable indexPathForCell:sender];
+    
+    NSArray *indexPaths = [[NSArray alloc] initWithObjects:indexPath, nil];
+    
+    [_bookmarkTable beginUpdates];
+    [_bookmarkTable deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationLeft];
+    [_bookmarkTable endUpdates];
+    }
 }
 
 @end
