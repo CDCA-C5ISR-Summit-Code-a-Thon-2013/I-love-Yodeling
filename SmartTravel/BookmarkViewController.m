@@ -10,9 +10,11 @@
 #import "SearchCell.h"
 #import "Bookmark.h"
 #import "MockData.h"
+#import "ImageHandler.h"
 
 @interface BookmarkViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *bookmarkTable;
+@property (nonatomic, strong) IBOutlet UIImageView *backgroundImage;
 @end
 
 @implementation BookmarkViewController
@@ -35,12 +37,15 @@
         MockData *mockme = [[MockData alloc] init];
         
         _bookmarks = [[NSMutableArray alloc] initWithArray:[mockme loadMockData]];
-//        
-//        [_bookmarks addObject:mark1];
-//        [_bookmarks addObject:mark2];
         
         [self.bookmarkTable reloadData];
     }
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    self.backgroundImage.image = [ImageHandler getMapImage];
+    [self.bookmarkTable setBackgroundColor:[UIColor clearColor]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -54,6 +59,7 @@
     Bookmark *bookmark = [_bookmarks objectAtIndex:[indexPath row]];
     
     SearchCell *bookmarkCell = [self.bookmarkTable dequeueReusableCellWithIdentifier:@"bookmarkCell"];
+    [bookmarkCell setBackgroundColor:[UIColor clearColor]];
     bookmarkCell.businessnameLabel.text = bookmark.location.name;
     bookmarkCell.locationLabel.text = bookmark.location.dealText;
     [bookmarkCell.businessImage setBackgroundColor:[UIColor blackColor]];
