@@ -10,4 +10,9 @@
 
 @interface BusinessDetailsViewController : UIViewController
 
+@property(strong,nonatomic) NSString *businessDealText;
+@property(strong,nonatomic) UIImage *businessImage;
+@property(strong,nonatomic) NSString *businessAddress;
+@property(strong,nonatomic) NSString *businessNameText;
+
 @end
