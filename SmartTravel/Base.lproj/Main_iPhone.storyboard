@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8vF-4Y-7Y1">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
-        <!--Map View Controller - Item 1-->
+        <!--Map View Controller - Map-->
         <scene sceneID="ac8-cr-42u">
             <objects>
                 <viewController id="5WU-oa-ghJ" customClass="MapViewController" sceneMemberID="viewController">
@@ -23,7 +23,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="bpN-DC-2ye"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="722-location-pin.png" id="bpN-DC-2ye"/>
                     <connections>
                         <outlet property="mapView" destination="CQT-qn-DVV" id="C7c-7M-T1p"/>
                         <segue destination="7Vw-km-XWY" kind="modal" identifier="showDetails" id="y2L-KZ-BMx"/>
@@ -244,6 +244,7 @@
     </scenes>
     <resources>
         <image name="06-magnify.png" width="24" height="24"/>
+        <image name="722-location-pin.png" width="19" height="28"/>
         <image name="star.png" width="28" height="26"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -46,6 +46,8 @@
     
     // add annotations
     [self addAnnotations];
+    
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -74,6 +76,9 @@
     MockData *mockData = [[MockData alloc] init];
     LocationAnnotation *annotation = nil;
     NSArray *locationArray = [mockData getLocationData];
+    
+    // snapshot
+//    [mockData blurSnapshotLightEffect:self];
     
     // add every location within our mock data set to our map
     for (int i = 0; i < [locationArray count]; i++)
