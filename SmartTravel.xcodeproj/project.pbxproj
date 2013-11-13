@@ -30,6 +30,7 @@
 		D246CB911833CDAA00034DB0 /* SearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D246CB901833CDAA00034DB0 /* SearchCell.m */; };
 		D246CB951833D04D00034DB0 /* 06-magnify.png in Resources */ = {isa = PBXBuildFile; fileRef = D246CB931833D04D00034DB0 /* 06-magnify.png */; };
 		D246CB961833D04D00034DB0 /* 06-magnify@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D246CB941833D04D00034DB0 /* 06-magnify@2x.png */; };
+		D246CB9B1833D68E00034DB0 /* SearchBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D246CB9A1833D68E00034DB0 /* SearchBarCell.m */; };
 		D6CBEDDC1833CB3F0093A175 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6CBEDDB1833CB3F0093A175 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,8 @@
 		D246CB901833CDAA00034DB0 /* SearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCell.m; sourceTree = "<group>"; };
 		D246CB931833D04D00034DB0 /* 06-magnify.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "06-magnify.png"; sourceTree = "<group>"; };
 		D246CB941833D04D00034DB0 /* 06-magnify@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "06-magnify@2x.png"; sourceTree = "<group>"; };
+		D246CB991833D68E00034DB0 /* SearchBarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBarCell.h; sourceTree = "<group>"; };
+		D246CB9A1833D68E00034DB0 /* SearchBarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBarCell.m; sourceTree = "<group>"; };
 		D6CBEDDB1833CB3F0093A175 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -140,6 +143,7 @@
 		9267E7E61833C54F004796FE /* SmartTravel */ = {
 			isa = PBXGroup;
 			children = (
+				D246CB981833D67D00034DB0 /* cells */,
 				D246CB971833D05200034DB0 /* Images */,
 				9267E8181833CA53004796FE /* BeaconManager */,
 				9267E7EF1833C54F004796FE /* SmartTravelAppDelegate.h */,
@@ -156,10 +160,6 @@
 				D246CB8A1833C6D400034DB0 /* SearchViewController.m */,
 				D246CB8C1833C6E000034DB0 /* BookmarkViewController.h */,
 				D246CB8D1833C6E000034DB0 /* BookmarkViewController.m */,
-				D246CB8F1833CDAA00034DB0 /* SearchCell.h */,
-				D246CB901833CDAA00034DB0 /* SearchCell.m */,
-				9267E81D1833D0B6004796FE /* BookmarkCell.h */,
-				9267E81E1833D0B6004796FE /* BookmarkCell.m */,
 			);
 			path = SmartTravel;
 			sourceTree = "<group>";
@@ -209,6 +209,19 @@
 				D246CB941833D04D00034DB0 /* 06-magnify@2x.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		D246CB981833D67D00034DB0 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				D246CB8F1833CDAA00034DB0 /* SearchCell.h */,
+				D246CB901833CDAA00034DB0 /* SearchCell.m */,
+				9267E81D1833D0B6004796FE /* BookmarkCell.h */,
+				9267E81E1833D0B6004796FE /* BookmarkCell.m */,
+				D246CB991833D68E00034DB0 /* SearchBarCell.h */,
+				D246CB9A1833D68E00034DB0 /* SearchBarCell.m */,
+			);
+			name = cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +337,7 @@
 				D246CB911833CDAA00034DB0 /* SearchCell.m in Sources */,
 				9267E7FA1833C54F004796FE /* SmartTravelViewController.m in Sources */,
 				D246CB881833C6C800034DB0 /* MapViewController.m in Sources */,
+				D246CB9B1833D68E00034DB0 /* SearchBarCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
