@@ -19,7 +19,7 @@
 @property (retain) NSArray *mockDataArray;
 @property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
-@property (strong, nonatomic) IBOutlet UITableView *searchViewLabel;
+@property (strong, nonatomic) IBOutlet UILabel *searchViewLabel;
 
 @end
 
@@ -48,6 +48,9 @@
     self.searchTableView.backgroundColor = [UIColor clearColor];
     
     self.view.backgroundColor = [UIColor clearColor];
+    
+    self.searchViewLabel.textColor = [UIColor blueColor];
+    self.searchViewLabel.alpha = .5;
     
     [self.searchTableView reloadData];
 }
@@ -93,7 +96,13 @@
         Bookmark *bookmark = [self.mockDataArray objectAtIndex:indexPath.row];
         
         cell.businessnameLabel.text = bookmark.location.name;
+        cell.businessnameLabel.textColor = [UIColor blueColor];
+        cell.businessnameLabel.alpha = .5;
+    
         cell.locationLabel.text = bookmark.location.address;
+        cell.locationLabel.textColor = [UIColor blueColor];
+        cell.locationLabel.alpha = .5;
+    
         cell.businessImage.backgroundColor = [UIColor blackColor];
 //        cell.businessImage.image = [UIImage imageNamed:bookmark.location.image];
     
@@ -128,6 +137,7 @@
     
     [self.searchBar resignFirstResponder];
     [self.searchTableView reloadData];
+    self.searchViewLabel.hidden = YES;
     self.searchTableView.hidden = NO;
 }
 
