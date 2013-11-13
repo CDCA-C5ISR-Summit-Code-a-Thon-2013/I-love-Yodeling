@@ -55,6 +55,11 @@
 
 # pragma mark - table view delegate methods
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    
+    return 2;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
     if (section == 0) {
@@ -75,6 +80,8 @@
             cell = [[SearchBarCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         }
         
+        cell.backgroundColor = [UIColor purpleColor];
+        
         return cell;
         
     } else {
@@ -86,6 +93,8 @@
             cell = [[SearchCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         }
         
+        cell.backgroundColor = [UIColor cyanColor];
+        
         Bookmark *bookmark = nil;
         if (tableView == self.searchDisplayController.searchResultsTableView) {
             //If the user is searching, use the list in our filteredList array.
@@ -96,6 +105,8 @@
         
         cell.businessnameLabel.text = bookmark.businessname;
         cell.dealLabel.text = bookmark.dealText;
+        cell.businessImage.backgroundColor = [UIColor blackColor];
+        cell.businessImage.image = [UIImage imageNamed:bookmark.businessImagePath];
         
         return cell;
     }
