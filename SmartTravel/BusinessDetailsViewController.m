@@ -8,6 +8,7 @@
 
 #import "BusinessDetailsViewController.h"
 #import "UIImage+ImageEffects.h"
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface BusinessDetailsViewController ()
 
@@ -27,6 +28,12 @@
         // Custom initialization
     }
     return self;
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    AudioServicesPlaySystemSound(1000);
+    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
 }
 
 - (void)viewDidLoad
