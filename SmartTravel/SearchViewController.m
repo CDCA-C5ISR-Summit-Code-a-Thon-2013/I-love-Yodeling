@@ -10,7 +10,6 @@
 #import "SearchCell.h"
 #import "Bookmark.h"
 #import "MockData.h"
-//#import "UIImage+ImageEffects.h"
 #import "ImageHandler.h"
 
 @interface SearchViewController ()
@@ -19,7 +18,7 @@
 @property (retain) NSArray *mockDataArray;
 @property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
-@property (strong, nonatomic) IBOutlet UITableView *searchViewLabel;
+@property (strong, nonatomic) IBOutlet UILabel *searchViewLabel;
 
 @end
 
@@ -48,6 +47,15 @@
     self.searchTableView.backgroundColor = [UIColor clearColor];
     
     self.view.backgroundColor = [UIColor clearColor];
+    
+    self.searchViewLabel.textColor = [UIColor blueColor];
+    self.searchViewLabel.alpha = .5;
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
     
     [self.searchTableView reloadData];
 }
@@ -93,7 +101,13 @@
         Bookmark *bookmark = [self.mockDataArray objectAtIndex:indexPath.row];
         
         cell.businessnameLabel.text = bookmark.location.name;
+        cell.businessnameLabel.textColor = [UIColor blueColor];
+        cell.businessnameLabel.alpha = .5;
+    
         cell.locationLabel.text = bookmark.location.address;
+        cell.locationLabel.textColor = [UIColor blueColor];
+        cell.locationLabel.alpha = .5;
+    
         cell.businessImage.backgroundColor = [UIColor blackColor];
 //        cell.businessImage.image = [UIImage imageNamed:bookmark.location.image];
     
@@ -127,8 +141,31 @@
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
     
     [self.searchBar resignFirstResponder];
-    [self.searchTableView reloadData];
-    self.searchTableView.hidden = NO;
+    
+    if ([searchBar.text isEqual: @"29412"]) {
+        
+        [self.searchTableView reloadData];
+        self.searchViewLabel.hidden = YES;
+        self.searchTableView.hidden = NO;
+        
+    } else {
+        
+        self.searchTableView.hidden = YES;
+        self.searchViewLabel.hidden = NO;
+        self.searchViewLabel.text = @"Sorry!  No deals found in this area. :(";
+    }
+    
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return NO;
+}
+
+- (void) dismissKeyboard
+{
+    // add self
+    [self.searchBar resignFirstResponder];
 }
 
 @end
