@@ -13,6 +13,6 @@
 
 - (NSArray*) getLocationData;
 - (NSArray *) loadMockData;
-- (UIImage *) blurSnapshotLightEffect : (UIViewController *) currentViewController
+- (UIImage *) blurSnapshotLightEffect : (UIViewController *) currentViewController;
 
 @end
