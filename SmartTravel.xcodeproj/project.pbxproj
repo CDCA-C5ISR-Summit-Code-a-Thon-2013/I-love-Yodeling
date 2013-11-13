@@ -27,15 +27,17 @@
 		9267E8221833D3FA004796FE /* Bookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 9267E8211833D3FA004796FE /* Bookmark.m */; };
 		9267E82D1833DF73004796FE /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 9267E82B1833DF73004796FE /* star.png */; };
 		9267E82E1833DF73004796FE /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9267E82C1833DF73004796FE /* star@2x.png */; };
+		92C6C5161833E40A00743214 /* BusinessDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C6C5151833E40A00743214 /* BusinessDetailsViewController.m */; };
 		D246CB881833C6C800034DB0 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D246CB871833C6C800034DB0 /* MapViewController.m */; };
 		D246CB8B1833C6D400034DB0 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D246CB8A1833C6D400034DB0 /* SearchViewController.m */; };
 		D246CB8E1833C6E000034DB0 /* BookmarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D246CB8D1833C6E000034DB0 /* BookmarkViewController.m */; };
 		D246CB911833CDAA00034DB0 /* SearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D246CB901833CDAA00034DB0 /* SearchCell.m */; };
 		D246CB951833D04D00034DB0 /* 06-magnify.png in Resources */ = {isa = PBXBuildFile; fileRef = D246CB931833D04D00034DB0 /* 06-magnify.png */; };
 		D246CB961833D04D00034DB0 /* 06-magnify@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D246CB941833D04D00034DB0 /* 06-magnify@2x.png */; };
-		D6C9386C1833D33B0083F04F /* LocationAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C9386B1833D33B0083F04F /* LocationAnnotation.m */; };
 		D2F22CE81833DDD700B63DBE /* SearchBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F22CE71833DDD700B63DBE /* SearchBarCell.m */; };
 		D2F22CED1833E13200B63DBE /* MockData.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F22CEC1833E13200B63DBE /* MockData.m */; };
+		D61E1F451833E2F500A42013 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = D61E1F441833E2F500A42013 /* Location.m */; };
+		D6C9386C1833D33B0083F04F /* LocationAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C9386B1833D33B0083F04F /* LocationAnnotation.m */; };
 		D6CBEDDC1833CB3F0093A175 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6CBEDDB1833CB3F0093A175 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +80,8 @@
 		9267E82A1833DF16004796FE /* SmartTravelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartTravelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9267E82B1833DF73004796FE /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		9267E82C1833DF73004796FE /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star@2x.png"; sourceTree = "<group>"; };
+		92C6C5141833E40A00743214 /* BusinessDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessDetailsViewController.h; sourceTree = "<group>"; };
+		92C6C5151833E40A00743214 /* BusinessDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessDetailsViewController.m; sourceTree = "<group>"; };
 		D246CB861833C6C800034DB0 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		D246CB871833C6C800034DB0 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		D246CB891833C6D400034DB0 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
@@ -88,12 +92,14 @@
 		D246CB901833CDAA00034DB0 /* SearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCell.m; sourceTree = "<group>"; };
 		D246CB931833D04D00034DB0 /* 06-magnify.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "06-magnify.png"; sourceTree = "<group>"; };
 		D246CB941833D04D00034DB0 /* 06-magnify@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "06-magnify@2x.png"; sourceTree = "<group>"; };
-		D6C9386A1833D33B0083F04F /* LocationAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationAnnotation.h; sourceTree = "<group>"; };
-		D6C9386B1833D33B0083F04F /* LocationAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationAnnotation.m; sourceTree = "<group>"; };
 		D2F22CE61833DDD700B63DBE /* SearchBarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBarCell.h; sourceTree = "<group>"; };
 		D2F22CE71833DDD700B63DBE /* SearchBarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBarCell.m; sourceTree = "<group>"; };
 		D2F22CEB1833E13200B63DBE /* MockData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockData.h; sourceTree = "<group>"; };
 		D2F22CEC1833E13200B63DBE /* MockData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockData.m; sourceTree = "<group>"; };
+		D61E1F431833E2F500A42013 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		D61E1F441833E2F500A42013 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		D6C9386A1833D33B0083F04F /* LocationAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationAnnotation.h; sourceTree = "<group>"; };
+		D6C9386B1833D33B0083F04F /* LocationAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationAnnotation.m; sourceTree = "<group>"; };
 		D6CBEDDB1833CB3F0093A175 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -176,6 +182,10 @@
 				9267E8211833D3FA004796FE /* Bookmark.m */,
 				D2F22CEB1833E13200B63DBE /* MockData.h */,
 				D2F22CEC1833E13200B63DBE /* MockData.m */,
+				D61E1F431833E2F500A42013 /* Location.h */,
+				D61E1F441833E2F500A42013 /* Location.m */,
+				92C6C5141833E40A00743214 /* BusinessDetailsViewController.h */,
+				92C6C5151833E40A00743214 /* BusinessDetailsViewController.m */,
 			);
 			path = SmartTravel;
 			sourceTree = "<group>";
@@ -341,8 +351,10 @@
 				D246CB8E1833C6E000034DB0 /* BookmarkViewController.m in Sources */,
 				9267E8221833D3FA004796FE /* Bookmark.m in Sources */,
 				9267E81B1833CA7F004796FE /* BeaconManager.m in Sources */,
+				92C6C5161833E40A00743214 /* BusinessDetailsViewController.m in Sources */,
 				D2F22CE81833DDD700B63DBE /* SearchBarCell.m in Sources */,
 				9267E81F1833D0B6004796FE /* BookmarkCell.m in Sources */,
+				D61E1F451833E2F500A42013 /* Location.m in Sources */,
 				D6C9386C1833D33B0083F04F /* LocationAnnotation.m in Sources */,
 				D246CB8B1833C6D400034DB0 /* SearchViewController.m in Sources */,
 				D246CB911833CDAA00034DB0 /* SearchCell.m in Sources */,

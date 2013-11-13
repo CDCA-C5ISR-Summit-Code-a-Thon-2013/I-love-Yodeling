@@ -61,6 +61,7 @@
     SearchCell *bookmarkCell = [self.bookmarkTable dequeueReusableCellWithIdentifier:@"bookmarkCell"];
     bookmarkCell.businessnameLabel.text = bookmark.businessname;
     bookmarkCell.dealLabel.text = bookmark.dealText;
+    [bookmarkCell.businessImage setBackgroundColor:[UIColor blackColor]];
     return bookmarkCell;
 }
 
