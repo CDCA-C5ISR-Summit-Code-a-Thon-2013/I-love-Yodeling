@@ -98,6 +98,7 @@
 
 @interface UIImage (ImageEffects)
 
+- (UIImage *)applyBobbyEffect;
 - (UIImage *)applyLightEffect;
 - (UIImage *)applyExtraLightEffect;
 - (UIImage *)applyDarkEffect;

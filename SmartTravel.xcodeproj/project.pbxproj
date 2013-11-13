@@ -27,6 +27,7 @@
 		9267E8221833D3FA004796FE /* Bookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 9267E8211833D3FA004796FE /* Bookmark.m */; };
 		9267E82D1833DF73004796FE /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 9267E82B1833DF73004796FE /* star.png */; };
 		9267E82E1833DF73004796FE /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9267E82C1833DF73004796FE /* star@2x.png */; };
+		928CB23E183405170048266E /* outback.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 928CB23D183405170048266E /* outback.JPG */; };
 		92C6C5161833E40A00743214 /* BusinessDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C6C5151833E40A00743214 /* BusinessDetailsViewController.m */; };
 		D246CB881833C6C800034DB0 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D246CB871833C6C800034DB0 /* MapViewController.m */; };
 		D246CB8B1833C6D400034DB0 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D246CB8A1833C6D400034DB0 /* SearchViewController.m */; };
@@ -84,6 +85,7 @@
 		9267E82A1833DF16004796FE /* SmartTravelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartTravelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9267E82B1833DF73004796FE /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		9267E82C1833DF73004796FE /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star@2x.png"; sourceTree = "<group>"; };
+		928CB23D183405170048266E /* outback.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = outback.JPG; sourceTree = "<group>"; };
 		92C6C5141833E40A00743214 /* BusinessDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessDetailsViewController.h; sourceTree = "<group>"; };
 		92C6C5151833E40A00743214 /* BusinessDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessDetailsViewController.m; sourceTree = "<group>"; };
 		D246CB861833C6C800034DB0 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 		D246CB971833D05200034DB0 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				928CB23D183405170048266E /* outback.JPG */,
 				D61E1F4D1833FF3400A42013 /* 722-location-pin.png */,
 				D61E1F4E1833FF3400A42013 /* 722-location-pin@2x.png */,
 				9267E82B1833DF73004796FE /* star.png */,
@@ -335,6 +338,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				928CB23E183405170048266E /* outback.JPG in Resources */,
 				D246CB961833D04D00034DB0 /* 06-magnify@2x.png in Resources */,
 				9267E7F71833C54F004796FE /* Main_iPad.storyboard in Resources */,
 				9267E82E1833DF73004796FE /* star@2x.png in Resources */,
