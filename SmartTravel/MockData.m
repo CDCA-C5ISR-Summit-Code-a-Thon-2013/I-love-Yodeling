@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 SPARC. All rights reserved.
 //
 
+#import "Location.h"
 #import "MockData.h"
 #import "UIImage+ImageEffects.h"
 
