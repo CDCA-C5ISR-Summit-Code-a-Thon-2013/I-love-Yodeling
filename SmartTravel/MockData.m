@@ -20,7 +20,7 @@
     [locationArray addObject:[[Location alloc] initWithName:@"Outback Steakhouse" andAddress:@"7643 Rivers Avenue" andImage:@"outback.JPG" andLogo:@"outbacklogo.jpg" andDealText:@"Active duty members of the military can enjoy a 20% discount on all items!" andCoordinate:CLLocationCoordinate2DMake(32.95452, -80.038254)]];
     
     // Applebee's 4910 Ashley Phosphate Road
-    [locationArray addObject:[[Location alloc] initWithName:@"Applebee's" andAddress:@"4910 Ashley Phosphate Road" andImage:@"" andLogo:@"applebeeslogo.jpg" andDealText:@"Every Veterans Day, Applebee's invites vets and active duty military to come have a meal on us." andCoordinate:CLLocationCoordinate2DMake(32.918088, -80.103746)]];
+    [locationArray addObject:[[Location alloc] initWithName:@"Applebee's" andAddress:@"4910 Ashley Phosphate Road" andImage:@"applebeesbackground.jpg" andLogo:@"applebeeslogo.jpg" andDealText:@"Every Veterans Day, Applebee's invites vets and active duty military to come have a meal on us." andCoordinate:CLLocationCoordinate2DMake(32.918088, -80.103746)]];
     
     // Outback 32.814401,-80.025895 1890 Sam Rittenberg Boulevard
     [locationArray addObject:[[Location alloc] initWithName:@"Outback Steakhouse" andAddress:@"1890 Sam Rittenberg Boulevard" andImage:@"outback.JPG" andLogo:@"outbacklogo.jpg" andDealText:@"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec nibh ac leo blandit vestibulum in quis turpis. Nunc convallis consectetur tortor eu sodales. Sed ut enim dolor. Vestibulum vitae sodales tellus. Cras vulputate odio vel feugiat eleifend. Duis in est quis erat dapibus pulvinar vel id tortor. Curabitur et porttitor ante, nec interdum lectus. Fusce a mauris et eros tristique ultrices nec non nisl." andCoordinate:CLLocationCoordinate2DMake(32.814401, -80.025895)]];
@@ -47,7 +47,7 @@
     [locationArray addObject:[[Location alloc] initWithName:@"Magnolia Plantation and Gardens" andAddress:@"3550 Ashley River Road" andImage:@"" andLogo:@"magnolialogo.jpg" andDealText:@"$1 off admissions" andCoordinate:CLLocationCoordinate2DMake(32.908793, -80.148559)]];
     
     // Yogi Bear’s Jellystone Park Camp Resorts
-    [locationArray addObject:[[Location alloc] initWithName:@"Yogi Bear’s Jellystone Park Camp Resorts" andAddress:@"357 Cedar Creek Rd" andImage:@"" andLogo:@"yogibearlogo.jpg" andDealText:@"10% off campsites for active military" andCoordinate:CLLocationCoordinate2DMake(33.373384, -79.658863)]];
+    [locationArray addObject:[[Location alloc] initWithName:@"Yogi Bear’s Jellystone Park Camp Resorts" andAddress:@"357 Cedar Creek Rd" andImage:@"jellystone.jpg" andLogo:@"yogibearlogo.jpg" andDealText:@"10% off campsites for active military" andCoordinate:CLLocationCoordinate2DMake(33.373384, -79.658863)]];
     
     // Outback 32.825942,-79.880326 715 Johnnie Dodds Boulevard
     [locationArray addObject:[[Location alloc] initWithName:@"Thee Southern Belle" andAddress:@"2028 Pittsburgh Ave" andImage:@"neon_stripper.jpg" andLogo:@"neon_stripper.jpg" andDealText:@"Free lap dances with a valid military ID." andCoordinate:CLLocationCoordinate2DMake(32.833497,-79.952985)]];
