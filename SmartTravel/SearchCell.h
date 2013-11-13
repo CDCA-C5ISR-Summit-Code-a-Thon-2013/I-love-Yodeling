@@ -12,6 +12,6 @@
 
 @property (strong, nonatomic) IBOutlet UIImageView *businessImage;
 @property (strong, nonatomic) IBOutlet UILabel *businessnameLabel;
-@property (strong, nonatomic) IBOutlet UILabel *dealLabel;
+@property (strong, nonatomic) IBOutlet UILabel *locationLabel;
 
 @end
