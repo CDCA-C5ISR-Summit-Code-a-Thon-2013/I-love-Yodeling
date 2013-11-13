@@ -50,6 +50,7 @@
 		D2F22D0C18342F5A00B63DBE /* applebeesbackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2F22D0B18342F5A00B63DBE /* applebeesbackground.jpg */; };
 		D2F22D0E183431A200B63DBE /* pagesbackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2F22D0D183431A200B63DBE /* pagesbackground.jpg */; };
 		D2F22D10183433CF00B63DBE /* marketpavilionbackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2F22D0F183433CF00B63DBE /* marketpavilionbackground.jpg */; };
+		D2F22D12183435DC00B63DBE /* millsbackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2F22D11183435DC00B63DBE /* millsbackground.jpg */; };
 		D61E1F451833E2F500A42013 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = D61E1F441833E2F500A42013 /* Location.m */; };
 		D61E1F4C1833FE0700A42013 /* ImageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D61E1F4B1833FE0700A42013 /* ImageHandler.m */; };
 		D61E1F4F1833FF3400A42013 /* 722-location-pin.png in Resources */ = {isa = PBXBuildFile; fileRef = D61E1F4D1833FF3400A42013 /* 722-location-pin.png */; };
@@ -134,6 +135,7 @@
 		D2F22D0B18342F5A00B63DBE /* applebeesbackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = applebeesbackground.jpg; sourceTree = "<group>"; };
 		D2F22D0D183431A200B63DBE /* pagesbackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pagesbackground.jpg; sourceTree = "<group>"; };
 		D2F22D0F183433CF00B63DBE /* marketpavilionbackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = marketpavilionbackground.jpg; sourceTree = "<group>"; };
+		D2F22D11183435DC00B63DBE /* millsbackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = millsbackground.jpg; sourceTree = "<group>"; };
 		D61E1F431833E2F500A42013 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		D61E1F441833E2F500A42013 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		D61E1F4A1833FE0700A42013 /* ImageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageHandler.h; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 		D246CB971833D05200034DB0 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D2F22D11183435DC00B63DBE /* millsbackground.jpg */,
 				D6BB5EC8183434A900787AD1 /* Charleston_gibbes_art_gallery.jpg */,
 				D6BB5EC9183434A900787AD1 /* Holiday_Inn_Express-Night.jpeg */,
 				D2F22D0F183433CF00B63DBE /* marketpavilionbackground.jpg */,
@@ -401,6 +404,7 @@
 				928CB243183424100048266E /* neon_stripper.jpg in Resources */,
 				928CB23E183405170048266E /* outback.JPG in Resources */,
 				D246CB961833D04D00034DB0 /* 06-magnify@2x.png in Resources */,
+				D2F22D12183435DC00B63DBE /* millsbackground.jpg in Resources */,
 				D6BB5ECA183434A900787AD1 /* Charleston_gibbes_art_gallery.jpg in Resources */,
 				D61E1F6618342E2800A42013 /* ggggggggggggg.png in Resources */,
 				D2F22D10183433CF00B63DBE /* marketpavilionbackground.jpg in Resources */,
