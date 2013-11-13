@@ -94,7 +94,7 @@
 {
     MKAnnotationView *annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"location"];
     annotationView.canShowCallout = YES;
-    annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+//    annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIBut];
     
     return annotationView;
 }

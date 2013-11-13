@@ -17,7 +17,7 @@
     _name = name;
     _address = address;
     _title = _name;
-    _subTitle = _address;
+    _subtitle = _address;
     return self;
 }
 
