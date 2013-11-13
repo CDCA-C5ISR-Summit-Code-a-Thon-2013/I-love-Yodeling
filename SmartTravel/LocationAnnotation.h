@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 SPARC. All rights reserved.
 //
 
+#import "Location.h"
 #import <MapKit/MapKit.h>
 #import <UIKit/UIKit.h>
 
@@ -19,6 +20,6 @@
 @property (nonatomic, readonly, copy) NSString *title;
 @property (nonatomic, readonly, copy) NSString *subtitle;
 
-- (id)initWithCoordinate:(CLLocationCoordinate2D)coordinate andName:(NSString*)name andAddress:(NSString*)address;
+- (id)initWithLocation:(Location*)location;
 
 @end
