@@ -112,7 +112,7 @@
         cell.locationLabel.alpha = .5;
     
         cell.businessImage.backgroundColor = [UIColor blackColor];
-//        cell.businessImage.image = [UIImage imageNamed:bookmark.location.image];
+        cell.businessImage.image = [UIImage imageNamed:location.logo];
     
         return cell;
 }
