@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Bookmark.h"
 
 @interface MockData : NSObject
 
