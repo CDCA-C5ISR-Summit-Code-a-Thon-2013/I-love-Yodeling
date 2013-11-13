@@ -7,6 +7,7 @@
 //
 
 #import "BusinessDetailsViewController.h"
+#import "UIImage+ImageEffects.h"
 
 @interface BusinessDetailsViewController ()
 
@@ -45,11 +46,13 @@
     
     [self.view addSubview:toolBar];
     barButton = nil;
+    
+    [_businessDealLabel setBackgroundColor:[UIColor colorWithRed:255 green:255 blue:255 alpha:0]];
 
     _addressLabel.text = _businessAddress;
     _businessDealLabel.text = _businessDealText;
     _businessNameLabel.text = _businessNameText;
-    _businessImageView.image = _businessImage;
+    _businessImageView.image = [_businessImage applyBobbyEffect];;
 }
 
 -(void)doneAction{
