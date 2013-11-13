@@ -12,5 +12,7 @@
 
 - (NSArray*) getLocationData;
 - (UIImage *) blurSnapshotLightEffect : (UIViewController *) currentViewController;
+- (int)indexOfLocation:(Location*)location;
+- (Location*)getLocationAtIndex:(int)index;
 
 @end
