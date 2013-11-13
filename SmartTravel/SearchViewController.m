@@ -8,9 +8,8 @@
 
 #import "SearchViewController.h"
 #import "SearchCell.h"
-#import "Bookmark.h"
+#import "Location.h"
 #import "MockData.h"
-//#import "UIImage+ImageEffects.h"
 #import "ImageHandler.h"
 
 @interface SearchViewController ()
@@ -41,7 +40,7 @@
     
     //load up mock data
     MockData *mockme = [[MockData alloc] init];
-    self.mockDataArray = mockme.loadMockData;
+    self.mockDataArray = [mockme getLocationData];
     
     self.searchTableView.hidden = YES;
     [self.searchBar setDelegate:self];
@@ -51,6 +50,12 @@
     
     self.searchViewLabel.textColor = [UIColor blueColor];
     self.searchViewLabel.alpha = .5;
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
     
     [self.searchTableView reloadData];
 }
@@ -93,13 +98,13 @@
         [cell setAccessoryType:UITableViewCellAccessoryNone];
         cell.backgroundColor = [UIColor clearColor];
         
-        Bookmark *bookmark = [self.mockDataArray objectAtIndex:indexPath.row];
+        Location *location = [self.mockDataArray objectAtIndex:indexPath.row];
         
-        cell.businessnameLabel.text = bookmark.location.name;
+        cell.businessnameLabel.text = location.name;
         cell.businessnameLabel.textColor = [UIColor blueColor];
         cell.businessnameLabel.alpha = .5;
     
-        cell.locationLabel.text = bookmark.location.address;
+        cell.locationLabel.text = location.address;
         cell.locationLabel.textColor = [UIColor blueColor];
         cell.locationLabel.alpha = .5;
     
@@ -136,9 +141,35 @@
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
     
     [self.searchBar resignFirstResponder];
-    [self.searchTableView reloadData];
-    self.searchViewLabel.hidden = YES;
-    self.searchTableView.hidden = NO;
+    
+    if ([searchBar.text isEqual: @"29412"] ||
+        [searchBar.text isEqual: @"29464"] ||
+        [searchBar.text isEqual: @"29466"] ||
+        [searchBar.text isEqual: @"29407"] ||
+        [searchBar.text isEqual: @"29405"] ) {
+        
+        [self.searchTableView reloadData];
+        self.searchViewLabel.hidden = YES;
+        self.searchTableView.hidden = NO;
+        
+    } else {
+        
+        self.searchTableView.hidden = YES;
+        self.searchViewLabel.hidden = NO;
+        self.searchViewLabel.text = @"Sorry!  No deals found in this area :(";
+    }
+    
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return NO;
+}
+
+- (void) dismissKeyboard
+{
+    // add self
+    [self.searchBar resignFirstResponder];
 }
 
 @end

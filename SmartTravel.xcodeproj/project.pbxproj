@@ -23,8 +23,6 @@
 		9267E80D1833C54F004796FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9267E80B1833C54F004796FE /* InfoPlist.strings */; };
 		9267E80F1833C550004796FE /* SmartTravelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9267E80E1833C550004796FE /* SmartTravelTests.m */; };
 		9267E81B1833CA7F004796FE /* BeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9267E81A1833CA7F004796FE /* BeaconManager.m */; };
-		9267E81F1833D0B6004796FE /* BookmarkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9267E81E1833D0B6004796FE /* BookmarkCell.m */; };
-		9267E8221833D3FA004796FE /* Bookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 9267E8211833D3FA004796FE /* Bookmark.m */; };
 		9267E82D1833DF73004796FE /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 9267E82B1833DF73004796FE /* star.png */; };
 		9267E82E1833DF73004796FE /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9267E82C1833DF73004796FE /* star@2x.png */; };
 		928CB23E183405170048266E /* outback.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 928CB23D183405170048266E /* outback.JPG */; };
@@ -42,6 +40,7 @@
 		D61E1F4C1833FE0700A42013 /* ImageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D61E1F4B1833FE0700A42013 /* ImageHandler.m */; };
 		D61E1F4F1833FF3400A42013 /* 722-location-pin.png in Resources */ = {isa = PBXBuildFile; fileRef = D61E1F4D1833FF3400A42013 /* 722-location-pin.png */; };
 		D61E1F501833FF3400A42013 /* 722-location-pin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D61E1F4E1833FF3400A42013 /* 722-location-pin@2x.png */; };
+		D61E1F53183409A000A42013 /* BookmarkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D61E1F52183409A000A42013 /* BookmarkManager.m */; };
 		D6C9386C1833D33B0083F04F /* LocationAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C9386B1833D33B0083F04F /* LocationAnnotation.m */; };
 		D6CBEDDC1833CB3F0093A175 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6CBEDDB1833CB3F0093A175 /* MapKit.framework */; };
 /* End PBXBuildFile section */
@@ -77,10 +76,6 @@
 		9267E80E1833C550004796FE /* SmartTravelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartTravelTests.m; sourceTree = "<group>"; };
 		9267E8191833CA7F004796FE /* BeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconManager.h; sourceTree = "<group>"; };
 		9267E81A1833CA7F004796FE /* BeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconManager.m; sourceTree = "<group>"; };
-		9267E81D1833D0B6004796FE /* BookmarkCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkCell.h; sourceTree = "<group>"; };
-		9267E81E1833D0B6004796FE /* BookmarkCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkCell.m; sourceTree = "<group>"; };
-		9267E8201833D3FA004796FE /* Bookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bookmark.h; sourceTree = "<group>"; };
-		9267E8211833D3FA004796FE /* Bookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bookmark.m; sourceTree = "<group>"; };
 		9267E8291833DF16004796FE /* SmartTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9267E82A1833DF16004796FE /* SmartTravelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartTravelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9267E82B1833DF73004796FE /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
@@ -110,6 +105,8 @@
 		D61E1F4B1833FE0700A42013 /* ImageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageHandler.m; sourceTree = "<group>"; };
 		D61E1F4D1833FF3400A42013 /* 722-location-pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "722-location-pin.png"; sourceTree = "<group>"; };
 		D61E1F4E1833FF3400A42013 /* 722-location-pin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "722-location-pin@2x.png"; sourceTree = "<group>"; };
+		D61E1F51183409A000A42013 /* BookmarkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkManager.h; sourceTree = "<group>"; };
+		D61E1F52183409A000A42013 /* BookmarkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkManager.m; sourceTree = "<group>"; };
 		D6C9386A1833D33B0083F04F /* LocationAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationAnnotation.h; sourceTree = "<group>"; };
 		D6C9386B1833D33B0083F04F /* LocationAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationAnnotation.m; sourceTree = "<group>"; };
 		D6CBEDDB1833CB3F0093A175 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -188,12 +185,8 @@
 				D246CB8D1833C6E000034DB0 /* BookmarkViewController.m */,
 				D246CB8F1833CDAA00034DB0 /* SearchCell.h */,
 				D246CB901833CDAA00034DB0 /* SearchCell.m */,
-				9267E81D1833D0B6004796FE /* BookmarkCell.h */,
-				9267E81E1833D0B6004796FE /* BookmarkCell.m */,
 				D6C9386A1833D33B0083F04F /* LocationAnnotation.h */,
 				D6C9386B1833D33B0083F04F /* LocationAnnotation.m */,
-				9267E8201833D3FA004796FE /* Bookmark.h */,
-				9267E8211833D3FA004796FE /* Bookmark.m */,
 				D2F22CEB1833E13200B63DBE /* MockData.h */,
 				D2F22CEC1833E13200B63DBE /* MockData.m */,
 				D61E1F431833E2F500A42013 /* Location.h */,
@@ -202,6 +195,8 @@
 				92C6C5151833E40A00743214 /* BusinessDetailsViewController.m */,
 				D61E1F4A1833FE0700A42013 /* ImageHandler.h */,
 				D61E1F4B1833FE0700A42013 /* ImageHandler.m */,
+				D61E1F51183409A000A42013 /* BookmarkManager.h */,
+				D61E1F52183409A000A42013 /* BookmarkManager.m */,
 			);
 			path = SmartTravel;
 			sourceTree = "<group>";
@@ -372,16 +367,15 @@
 				D2F22CED1833E13200B63DBE /* MockData.m in Sources */,
 				9267E7ED1833C54F004796FE /* main.m in Sources */,
 				D246CB8E1833C6E000034DB0 /* BookmarkViewController.m in Sources */,
-				9267E8221833D3FA004796FE /* Bookmark.m in Sources */,
 				9267E81B1833CA7F004796FE /* BeaconManager.m in Sources */,
 				92C6C5161833E40A00743214 /* BusinessDetailsViewController.m in Sources */,
 				D2F22CE81833DDD700B63DBE /* SearchBarCell.m in Sources */,
 				D61E1F4C1833FE0700A42013 /* ImageHandler.m in Sources */,
-				9267E81F1833D0B6004796FE /* BookmarkCell.m in Sources */,
 				D61E1F451833E2F500A42013 /* Location.m in Sources */,
 				D6C9386C1833D33B0083F04F /* LocationAnnotation.m in Sources */,
 				D246CB8B1833C6D400034DB0 /* SearchViewController.m in Sources */,
 				D246CB911833CDAA00034DB0 /* SearchCell.m in Sources */,
+				D61E1F53183409A000A42013 /* BookmarkManager.m in Sources */,
 				9267E7FA1833C54F004796FE /* SmartTravelViewController.m in Sources */,
 				D246CB881833C6C800034DB0 /* MapViewController.m in Sources */,
 			);
