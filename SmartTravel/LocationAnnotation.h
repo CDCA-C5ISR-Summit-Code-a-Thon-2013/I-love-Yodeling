@@ -16,6 +16,7 @@
     NSString *_address;
 }
 
+@property (nonatomic, readonly) Location* location;
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
 @property (nonatomic, readonly, copy) NSString *title;
 @property (nonatomic, readonly, copy) NSString *subtitle;

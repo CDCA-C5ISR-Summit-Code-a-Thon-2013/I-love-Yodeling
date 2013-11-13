@@ -32,8 +32,33 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    CGRect origFrame =  _contentView.frame;
+    _contentView.frame = CGRectMake(origFrame.origin.x+300, origFrame.origin.y, origFrame.size.width, origFrame.size.height);
+
+    [_contentView setHidden:YES];
     
-    
+    double delayInSeconds = 1.0;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        
+        
+        CGRect origRect = _contentView.frame;
+        
+        
+        _contentView.frame = CGRectMake(origRect.origin.x+400, origRect.origin.y, origRect.size.width, origRect.size.height);
+        
+        [_contentView setHidden:NO];
+        [UIView animateWithDuration:1
+                              delay:0
+             usingSpringWithDamping:.75f
+              initialSpringVelocity:0.0f
+                            options:UIViewAnimationOptionCurveEaseOut
+                         animations:^{
+                             self.contentView.frame = origRect;
+                         }
+                         completion:^(BOOL finished) {
+                         }];
+    });    
     
     [_businessDealLabel setBackgroundColor:[UIColor colorWithRed:255 green:255 blue:255 alpha:0]];
 

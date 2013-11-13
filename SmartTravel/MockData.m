@@ -52,8 +52,30 @@
     return locationArray;
 }
 
+- (int)indexOfLocation:(Location*)location
+{
+    NSArray *locations = [self getLocationData];
+    for (int i = 0; i < [locations count]; i++)
+    {
+        Location *tempLocation = [locations objectAtIndex:i];
+        if ((location.coordinate.latitude == tempLocation.coordinate.latitude) && (location.coordinate.longitude == tempLocation.coordinate.longitude))
+        {
+            return i;
+        }
+    }
+    
+    return -1;
+}
 
-
+- (Location*)getLocationAtIndex:(int)index
+{
+    if ((index >= -1) && (index < [[self getLocationData] count]))
+    {
+        Location *location = [[self getLocationData] objectAtIndex:index];
+        return location;
+    }
+    return nil;
+}
 
 - (UIImage *) blurSnapshotLightEffect : (UIViewController *) currentViewController {
     

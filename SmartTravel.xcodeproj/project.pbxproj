@@ -36,12 +36,13 @@
 		D2F22CE81833DDD700B63DBE /* SearchBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F22CE71833DDD700B63DBE /* SearchBarCell.m */; };
 		D2F22CED1833E13200B63DBE /* MockData.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F22CEC1833E13200B63DBE /* MockData.m */; };
 		D2F22CF01833FA6700B63DBE /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F22CEF1833FA6700B63DBE /* UIImage+ImageEffects.m */; };
-		D2F22CF4183419E000B63DBE /* outbacklogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2F22CF3183419E000B63DBE /* outbacklogo.jpg */; };
 		D61E1F451833E2F500A42013 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = D61E1F441833E2F500A42013 /* Location.m */; };
 		D61E1F4C1833FE0700A42013 /* ImageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D61E1F4B1833FE0700A42013 /* ImageHandler.m */; };
 		D61E1F4F1833FF3400A42013 /* 722-location-pin.png in Resources */ = {isa = PBXBuildFile; fileRef = D61E1F4D1833FF3400A42013 /* 722-location-pin.png */; };
 		D61E1F501833FF3400A42013 /* 722-location-pin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D61E1F4E1833FF3400A42013 /* 722-location-pin@2x.png */; };
 		D61E1F53183409A000A42013 /* BookmarkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D61E1F52183409A000A42013 /* BookmarkManager.m */; };
+		D61E1F5E1834182600A42013 /* 726-star-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = D61E1F5C1834182600A42013 /* 726-star-selected.png */; };
+		D61E1F5F1834182600A42013 /* 726-star-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D61E1F5D1834182600A42013 /* 726-star-selected@2x.png */; };
 		D6C9386C1833D33B0083F04F /* LocationAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C9386B1833D33B0083F04F /* LocationAnnotation.m */; };
 		D6CBEDDC1833CB3F0093A175 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6CBEDDB1833CB3F0093A175 /* MapKit.framework */; };
 /* End PBXBuildFile section */
@@ -100,7 +101,6 @@
 		D2F22CEC1833E13200B63DBE /* MockData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockData.m; sourceTree = "<group>"; };
 		D2F22CEE1833FA6700B63DBE /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		D2F22CEF1833FA6700B63DBE /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
-		D2F22CF3183419E000B63DBE /* outbacklogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = outbacklogo.jpg; sourceTree = "<group>"; };
 		D61E1F431833E2F500A42013 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		D61E1F441833E2F500A42013 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		D61E1F4A1833FE0700A42013 /* ImageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageHandler.h; sourceTree = "<group>"; };
@@ -109,6 +109,8 @@
 		D61E1F4E1833FF3400A42013 /* 722-location-pin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "722-location-pin@2x.png"; sourceTree = "<group>"; };
 		D61E1F51183409A000A42013 /* BookmarkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkManager.h; sourceTree = "<group>"; };
 		D61E1F52183409A000A42013 /* BookmarkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkManager.m; sourceTree = "<group>"; };
+		D61E1F5C1834182600A42013 /* 726-star-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "726-star-selected.png"; sourceTree = "<group>"; };
+		D61E1F5D1834182600A42013 /* 726-star-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "726-star-selected@2x.png"; sourceTree = "<group>"; };
 		D6C9386A1833D33B0083F04F /* LocationAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationAnnotation.h; sourceTree = "<group>"; };
 		D6C9386B1833D33B0083F04F /* LocationAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationAnnotation.m; sourceTree = "<group>"; };
 		D6CBEDDB1833CB3F0093A175 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -244,7 +246,8 @@
 		D246CB971833D05200034DB0 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				D2F22CF3183419E000B63DBE /* outbacklogo.jpg */,
+				D61E1F5C1834182600A42013 /* 726-star-selected.png */,
+				D61E1F5D1834182600A42013 /* 726-star-selected@2x.png */,
 				928CB23D183405170048266E /* outback.JPG */,
 				D61E1F4D1833FF3400A42013 /* 722-location-pin.png */,
 				D61E1F4E1833FF3400A42013 /* 722-location-pin@2x.png */,
@@ -340,11 +343,12 @@
 				D246CB961833D04D00034DB0 /* 06-magnify@2x.png in Resources */,
 				9267E7F71833C54F004796FE /* Main_iPad.storyboard in Resources */,
 				9267E82E1833DF73004796FE /* star@2x.png in Resources */,
-				D2F22CF4183419E000B63DBE /* outbacklogo.jpg in Resources */,
+				D61E1F5E1834182600A42013 /* 726-star-selected.png in Resources */,
 				9267E7FC1833C54F004796FE /* Images.xcassets in Resources */,
 				9267E7F41833C54F004796FE /* Main_iPhone.storyboard in Resources */,
 				D61E1F4F1833FF3400A42013 /* 722-location-pin.png in Resources */,
 				9267E82D1833DF73004796FE /* star.png in Resources */,
+				D61E1F5F1834182600A42013 /* 726-star-selected@2x.png in Resources */,
 				D61E1F501833FF3400A42013 /* 722-location-pin@2x.png in Resources */,
 				D246CB951833D04D00034DB0 /* 06-magnify.png in Resources */,
 				9267E7EB1833C54F004796FE /* InfoPlist.strings in Resources */,

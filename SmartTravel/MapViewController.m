@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 SPARC. All rights reserved.
 //
 
+#import "BookmarkManager.h"
 #import "LocationAnnotation.h"
 #import <MapKit/MapKit.h>
 #import "MapViewController.h"
@@ -20,6 +21,7 @@
 @property (nonatomic, strong) IBOutlet MKMapView *mapView;
 @property (nonatomic, strong) BeaconManager *beaconManager;
 @property (nonatomic, strong) NSString *tempBeaconMinor;
+@property (nonatomic, strong) NSMutableDictionary *locationHash;
 
 @end
 
@@ -37,6 +39,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    _locationHash = [[NSMutableDictionary alloc] init];
     
     _beaconManager = [[BeaconManager alloc] initWithUUID:@"9f1fcde8-47c2-11e3-86ae-ce3f5508acd9" identifier:@"com.smarttravel"];
     _beaconManager.delegate = self;
@@ -60,18 +64,6 @@
     MKCoordinateRegion region = MKCoordinateRegionMake(coordinate, MKCoordinateSpanMake(0.5, 0.5));
     [_mapView setRegion:region];
 }
-
-//- (void)viewDidAppear:(BOOL)animated
-//{
-//    // show user location
-//    _mapView.showsUserLocation = TRUE;
-//    
-//    // we want the map to be zoomed in a specific region
-//    CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(32.9, -79.9158);
-//    [_mapView setCenterCoordinate:coordinate animated:FALSE];
-//    MKCoordinateRegion region = MKCoordinateRegionMake(coordinate, MKCoordinateSpanMake(0.5, 0.5));
-//    [_mapView setRegion:region];
-//}
 
 - (void)viewWillDisappear:(BOOL)animated
 {
@@ -104,11 +96,64 @@
     
     if ([annotation isKindOfClass:[LocationAnnotation class]])
     {
+        LocationAnnotation *locAnnotation = (LocationAnnotation*)annotation;
+        Location *location = locAnnotation.location;
         annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"location"];
         annotationView.canShowCallout = YES;
+        
+        MockData *mockData = [[MockData alloc] init];
+        
+        // set add bookmark button
+        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 24, 24)];
+        [button.titleLabel setTintColor:[UIColor blueColor]];
+        [button setAlpha:0.5f];
+        [button addTarget:self action:@selector(bookmarkButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+        [button setBackgroundColor:[UIColor clearColor]];
+        NSInteger index = [mockData indexOfLocation:location];
+        [button setTag:index];
+        annotationView.rightCalloutAccessoryView = button;
+        
+        // is this location bookmarked?
+        if ([BookmarkManager isLocationBookmarked:location])
+        {
+            [button setImage:[UIImage imageNamed:@"726-star-selected.png"] forState:UIControlStateNormal];
+            [button setImage:[UIImage imageNamed:@"726-star-selected.png"] forState:UIControlStateSelected];
+            [button setImage:[UIImage imageNamed:@"726-star-selected.png"] forState:UIControlStateHighlighted];
+        }
+        else
+        {
+            [button setImage:[UIImage imageNamed:@"star.png"] forState:UIControlStateNormal];
+            [button setImage:[UIImage imageNamed:@"star.png"] forState:UIControlStateSelected];
+            [button setImage:[UIImage imageNamed:@"star.png"] forState:UIControlStateHighlighted];
+        }
     }
     
     return annotationView;
+}
+
+- (void)bookmarkButtonClicked:(id)sender
+{
+    // do something
+    UIButton *button = (UIButton*)sender;
+    int index = button.tag;
+    MockData *mockData = [[MockData alloc] init];
+    Location *location = [mockData getLocationAtIndex:index];
+    if ([BookmarkManager isLocationBookmarked:location])
+    {
+        [BookmarkManager removeBookmark:location];
+        
+        [button setImage:[UIImage imageNamed:@"star.png"] forState:UIControlStateNormal];
+        [button setImage:[UIImage imageNamed:@"star.png"] forState:UIControlStateSelected];
+        [button setImage:[UIImage imageNamed:@"star.png"] forState:UIControlStateHighlighted];
+    }
+    else
+    {
+        [BookmarkManager addBookmark:location];
+        
+        [button setImage:[UIImage imageNamed:@"726-star-selected.png"] forState:UIControlStateNormal];
+        [button setImage:[UIImage imageNamed:@"726-star-selected.png"] forState:UIControlStateSelected];
+        [button setImage:[UIImage imageNamed:@"726-star-selected.png"] forState:UIControlStateHighlighted];
+    }
 }
 
 #pragma mark - beacon delegate methods
