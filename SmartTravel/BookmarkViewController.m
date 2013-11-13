@@ -12,7 +12,6 @@
 
 @interface BookmarkViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *bookmarkTable;
-@property (strong, nonatomic) NSMutableArray *bookmarks;
 @end
 
 @implementation BookmarkViewController
@@ -29,7 +28,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
+    if ([_bookmarks count] == 0) {
+        
+        _bookmarks = [[NSMutableArray alloc] init];
+        
+        Bookmark *mark1 = [[Bookmark alloc] init];
+        mark1.businessname = @"CiCi's";
+        mark1.dealText = @"All you can eat pizza for free!!!!";
+        
+        Bookmark *mark2 = [[Bookmark alloc] init];
+        mark2.businessname = @"Mariott Hotel";
+        mark2.dealText = @"Free hotel rooms!!!!";
+        
+        [_bookmarks addObject:mark1];
+        [_bookmarks addObject:mark2];
+        
+        [self.bookmarkTable reloadData];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,7 +66,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return [_bookmarks count];
 }
 
 

@@ -123,7 +123,7 @@
             </objects>
             <point key="canvasLocation" x="-506" y="1040"/>
         </scene>
-        <!--Bookmark View Controller - Item 2-->
+        <!--Bookmark View Controller - Bookmarks-->
         <scene sceneID="B1k-KW-vdL">
             <objects>
                 <viewController id="b8j-sc-29H" customClass="BookmarkViewController" sceneMemberID="viewController">
@@ -136,11 +136,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="105" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="6RQ-Nd-V09">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="500"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchCell" rowHeight="103" id="GzW-7r-tz0" customClass="SearchCell">
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="bookmarkCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="bookmarkCell" rowHeight="103" id="GzW-7r-tz0" customClass="SearchCell">
                                         <rect key="frame" x="0.0" y="22" width="320" height="103"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GzW-7r-tz0" id="n72-7z-mCM">
@@ -181,18 +181,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="yJd-fE-y6Y"/>
+                    <tabBarItem key="tabBarItem" title="Bookmarks" image="star.png" id="yJd-fE-y6Y"/>
                     <connections>
                         <outlet property="bookmarkTable" destination="6RQ-Nd-V09" id="Fd8-oP-GV4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQU-sC-ePu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-68" y="671"/>
+            <point key="canvasLocation" x="-68" y="691"/>
         </scene>
     </scenes>
     <resources>
         <image name="06-magnify.png" width="24" height="24"/>
+        <image name="star.png" width="28" height="26"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
