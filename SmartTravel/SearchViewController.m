@@ -104,11 +104,11 @@
         Location *location = [self.mockDataArray objectAtIndex:indexPath.row];
         
         cell.businessnameLabel.text = location.name;
-        cell.businessnameLabel.textColor = [UIColor blueColor];
+        cell.businessnameLabel.textColor = [UIColor blackColor];
         cell.businessnameLabel.alpha = .5;
     
         cell.locationLabel.text = location.address;
-        cell.locationLabel.textColor = [UIColor blueColor];
+        cell.locationLabel.textColor = [UIColor blackColor];
         cell.locationLabel.alpha = .5;
     
         cell.businessImage.backgroundColor = [UIColor blackColor];
