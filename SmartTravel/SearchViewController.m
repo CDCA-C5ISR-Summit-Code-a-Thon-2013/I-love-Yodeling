@@ -97,7 +97,7 @@
             cell = [[SearchCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         }
     
-//        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         [cell setAccessoryType:UITableViewCellAccessoryNone];
         cell.backgroundColor = [UIColor clearColor];
         
