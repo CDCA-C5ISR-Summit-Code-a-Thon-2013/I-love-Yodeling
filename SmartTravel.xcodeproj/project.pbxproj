@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		921D055D18342EA600DC801E /* jellystone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 921D055C18342EA600DC801E /* jellystone.jpg */; };
 		9267E7E11833C54F004796FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9267E7E01833C54F004796FE /* Foundation.framework */; };
 		9267E7E31833C54F004796FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9267E7E21833C54F004796FE /* CoreGraphics.framework */; };
 		9267E7E51833C54F004796FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9267E7E41833C54F004796FE /* UIKit.framework */; };
@@ -68,6 +69,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		921D055C18342EA600DC801E /* jellystone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jellystone.jpg; sourceTree = "<group>"; };
 		9267E7E01833C54F004796FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9267E7E21833C54F004796FE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		9267E7E41833C54F004796FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -267,6 +269,7 @@
 		D246CB971833D05200034DB0 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				921D055C18342EA600DC801E /* jellystone.jpg */,
 				928CB242183424100048266E /* neon_stripper.jpg */,
 				D2F22D031834246000B63DBE /* magnolialogo.jpg */,
 				D2F22D011834236100B63DBE /* gibbeslogo.jpg */,
@@ -383,6 +386,7 @@
 				9267E7F41833C54F004796FE /* Main_iPhone.storyboard in Resources */,
 				D2F22D021834236100B63DBE /* gibbeslogo.jpg in Resources */,
 				D2F22CFE183420BB00B63DBE /* millshouselogo.jpg in Resources */,
+				921D055D18342EA600DC801E /* jellystone.jpg in Resources */,
 				D61E1F4F1833FF3400A42013 /* 722-location-pin.png in Resources */,
 				D2F22CF618341CC300B63DBE /* outbacklogo.jpg in Resources */,
 				9267E82D1833DF73004796FE /* star.png in Resources */,
