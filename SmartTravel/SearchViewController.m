@@ -7,6 +7,7 @@
 //
 
 #import "SearchViewController.h"
+#import "SearchCell.h"
 
 @interface SearchViewController ()
 
@@ -45,7 +46,12 @@
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [[UITableViewCell alloc] init];
+    static NSString *CellIdentifier = @"searchCell";
+    
+    SearchCell *cell = [self.searchTableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if ( cell == nil ) {
+        cell = [[SearchCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
     return cell;
 }
 

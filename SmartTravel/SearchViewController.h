@@ -10,4 +10,7 @@
 
 @interface SearchViewController : UITableViewController <UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate, UISearchDisplayDelegate>
 
+@property (nonatomic, retain) IBOutlet UITableView *searchTableView;
+@property (nonatomic, retain) IBOutlet UISearchBar *searchBar;
+
 @end

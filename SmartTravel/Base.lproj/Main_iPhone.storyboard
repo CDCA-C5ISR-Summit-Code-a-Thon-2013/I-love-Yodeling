@@ -61,7 +61,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="103" id="DJN-oG-bNT" customClass="SearchCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchCell" rowHeight="103" id="DJN-oG-bNT" customClass="SearchCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="103"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DJN-oG-bNT" id="uIL-w3-guJ">
@@ -97,6 +97,10 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Search" image="06-magnify.png" id="oLM-rI-0jf"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="searchBar" destination="Rkv-TH-C4j" id="Sq9-VH-7E2"/>
+                        <outlet property="searchTableView" destination="AQD-iu-Qu1" id="ap2-DU-iCs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2hN-kY-aoJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <searchBar contentMode="redraw" id="Rkv-TH-C4j">
