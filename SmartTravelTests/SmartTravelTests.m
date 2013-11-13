@@ -1,6 +1,6 @@
 //
-//  TravelSmartTests.m
-//  TravelSmartTests
+//  SmartTravelTests.m
+//  SmartTravelTests
 //
 //  Created by Bobby Strickland on 11/13/13.
 //  Copyright (c) 2013 SPARC. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface TravelSmartTests : XCTestCase
+@interface SmartTravelTests : XCTestCase
 
 @end
 
-@implementation TravelSmartTests
+@implementation SmartTravelTests
 
 - (void)setUp
 {
