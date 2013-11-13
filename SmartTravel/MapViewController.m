@@ -50,10 +50,7 @@
     
     // add annotations
     [self addAnnotations];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
+    
     // show user location
     _mapView.showsUserLocation = TRUE;
     
@@ -64,19 +61,23 @@
     [_mapView setRegion:region];
 }
 
+//- (void)viewDidAppear:(BOOL)animated
+//{
+//    // show user location
+//    _mapView.showsUserLocation = TRUE;
+//    
+//    // we want the map to be zoomed in a specific region
+//    CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(32.9, -79.9158);
+//    [_mapView setCenterCoordinate:coordinate animated:FALSE];
+//    MKCoordinateRegion region = MKCoordinateRegionMake(coordinate, MKCoordinateSpanMake(0.5, 0.5));
+//    [_mapView setRegion:region];
+//}
+
 - (void)viewWillDisappear:(BOOL)animated
 {
     // snapshot
     MockData *mockData = [[MockData alloc] init];
     [ImageHandler storeMapImage:[mockData blurSnapshotLightEffect:self]];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    
-    //map stuff
-    // Dispose of any resources that can be recreated.
 }
 
 - (void)addAnnotations
