@@ -52,7 +52,7 @@
             </objects>
             <point key="canvasLocation" x="-569" y="343"/>
         </scene>
-        <!--Search View Controller - Item-->
+        <!--Search View Controller - Search-->
         <scene sceneID="flL-qQ-hVu">
             <objects>
                 <viewController id="VPX-vl-frG" customClass="SearchViewController" sceneMemberID="viewController">
@@ -71,7 +71,7 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="oLM-rI-0jf"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="06-magnify.png" id="oLM-rI-0jf"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2hN-kY-aoJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -103,6 +103,9 @@
             <point key="canvasLocation" x="-68" y="671"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="06-magnify.png" width="24" height="24"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
