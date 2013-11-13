@@ -11,11 +11,13 @@
 #import "SearchCell.h"
 #import "MockData.h"
 #import "ImageHandler.h"
+#import "BusinessDetailsViewController.h"
 
 @interface BookmarkViewController ()
 @property (nonatomic, strong) IBOutlet UILabel *noBookmarksLabel;
 @property (weak, nonatomic) IBOutlet UITableView *bookmarkTable;
 @property (nonatomic, strong) IBOutlet UIImageView *backgroundImage;
+@property (strong, nonatomic) Location *selectedLocation;
 @end
 
 @implementation BookmarkViewController
@@ -62,18 +64,41 @@
     Location *location = [BookmarkManager bookmarkAtIndex:[indexPath row]];
     SearchCell *locationCell = [self.bookmarkTable dequeueReusableCellWithIdentifier:@"bookmarkCell"];
     [locationCell setBackgroundColor:[UIColor clearColor]];
+    locationCell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
     locationCell.businessnameLabel.text = location.name;
-    locationCell.locationLabel.text = location.dealText;
-    [locationCell.businessImage setBackgroundColor:[UIColor blackColor]];
+    locationCell.locationLabel.text = location.address;
+    locationCell.businessImage.image = [UIImage imageNamed:location.logo];
+    
     UISwipeGestureRecognizer * Swipeleft= [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeLeft:)];
     Swipeleft.direction=UISwipeGestureRecognizerDirectionLeft;
     [locationCell addGestureRecognizer:Swipeleft];
+    
     return locationCell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [BookmarkManager bookmarkCount];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    self.selectedLocation = [BookmarkManager bookmarkAtIndex:[indexPath row]];
+    [self performSegueWithIdentifier:@"showDetails" sender:self];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    if ([[segue identifier] isEqualToString:@"showDetails"]) {
+        
+        BusinessDetailsViewController *bdvc = [segue destinationViewController];
+        
+        bdvc.businessAddress = self.selectedLocation.address;
+        bdvc.businessNameText = self.selectedLocation.name;
+        bdvc.businessDealText = self.selectedLocation.dealText;
+        bdvc.businessImage = [UIImage imageNamed:self.selectedLocation.image];
+    }
 }
 
 - (void)swipeLeft:(id)sender

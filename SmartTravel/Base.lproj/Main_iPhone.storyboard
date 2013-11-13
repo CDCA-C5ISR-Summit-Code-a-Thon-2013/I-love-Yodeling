@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8vF-4Y-7Y1">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Map View Controller - Map-->
@@ -198,6 +198,7 @@
                                         <connections>
                                             <outlet property="businessImage" destination="6aT-QH-Zdw" id="9ny-iS-dq8"/>
                                             <outlet property="businessnameLabel" destination="2cW-lf-jad" id="GhG-dY-f1H"/>
+                                            <outlet property="locationLabel" destination="lzn-NC-Mlo" id="wLx-I8-TtX"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -214,6 +215,7 @@
                         <outlet property="backgroundImage" destination="tJX-dF-dcc" id="0RO-9g-fDH"/>
                         <outlet property="bookmarkTable" destination="6RQ-Nd-V09" id="Fd8-oP-GV4"/>
                         <outlet property="noBookmarksLabel" destination="ibQ-C0-VSx" id="TXZ-d6-7k5"/>
+                        <segue destination="7Vw-km-XWY" kind="modal" identifier="showDetails" id="944-yp-VZh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQU-sC-ePu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -307,6 +309,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="lzl-AJ-pu6"/>
+        <segue reference="944-yp-VZh"/>
     </inferredMetricsTieBreakers>
 </document>
