@@ -14,8 +14,9 @@
 @property (nonatomic, readonly) NSString *name;
 @property (nonatomic, readonly) NSString *address;
 @property (nonatomic, readonly) NSString *image;
+@property (nonatomic, readonly) NSString *dealText;
 @property (readonly) CLLocationCoordinate2D coordinate;
 
-- (id)initWithName:(NSString*)name andAddress:(NSString*)address andCoordinate:(CLLocationCoordinate2D)coordinate;
+- (id)initWithName:(NSString*)name andAddress:(NSString*)address andImage:(NSString*)image andDealText:(NSString*)dealText andCoordinate:(CLLocationCoordinate2D)coordinate;
 
 @end
