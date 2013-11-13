@@ -64,7 +64,7 @@
     [_mapView setRegion:region];
 }
 
-- (void)viewDidDisappear:(BOOL)animated
+- (void)viewWillDisappear:(BOOL)animated
 {
     // snapshot
     MockData *mockData = [[MockData alloc] init];
