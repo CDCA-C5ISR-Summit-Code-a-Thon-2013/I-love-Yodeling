@@ -128,7 +128,15 @@
 #pragma mark - beacon delegate methods
 
 -(void)didEnterRegion:(CLRegion *)region{
-    NSLog(@"Did enter region");
+    [self.view setBackgroundColor:[UIColor orangeColor]];
+    NSLog(@"skoooo");
+    UILocalNotification *notif = [[UILocalNotification alloc] init];
+    notif.repeatInterval    = 0;
+    notif.alertBody         = @"Found a great deal";
+    notif.soundName         = @"sound.caf";
+    notif.alertAction       = @"Take a look!";
+    notif.userInfo = @{@"":@""};
+    [[UIApplication sharedApplication] presentLocalNotificationNow:notif];
 }
 
 -(void)didFindBeacons:(NSArray *)beacons{
