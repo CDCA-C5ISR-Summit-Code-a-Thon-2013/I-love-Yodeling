@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8vF-4Y-7Y1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="fhM-hd-YjO">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Map View Controller - Map-->
@@ -32,6 +32,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dqM-W3-REu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-68" y="18"/>
+        </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="vRe-2Q-Ezd">
+            <objects>
+                <viewController id="fhM-hd-YjO" customClass="SplashViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ipe-5i-XFR"/>
+                        <viewControllerLayoutGuide type="bottom" id="jQT-X7-jme"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q1x-ky-qk7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YPe-jV-glY">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="splashImage" destination="YPe-jV-glY" id="sPg-x1-1Of"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dFq-2f-dw0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1044" y="343"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Opo-hq-QtK">
@@ -198,6 +225,7 @@
                                         <connections>
                                             <outlet property="businessImage" destination="6aT-QH-Zdw" id="9ny-iS-dq8"/>
                                             <outlet property="businessnameLabel" destination="2cW-lf-jad" id="GhG-dY-f1H"/>
+                                            <outlet property="locationLabel" destination="lzn-NC-Mlo" id="wLx-I8-TtX"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -214,6 +242,7 @@
                         <outlet property="backgroundImage" destination="tJX-dF-dcc" id="0RO-9g-fDH"/>
                         <outlet property="bookmarkTable" destination="6RQ-Nd-V09" id="Fd8-oP-GV4"/>
                         <outlet property="noBookmarksLabel" destination="ibQ-C0-VSx" id="TXZ-d6-7k5"/>
+                        <segue destination="7Vw-km-XWY" kind="modal" identifier="showDetails" id="944-yp-VZh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQU-sC-ePu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -307,6 +336,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="lzl-AJ-pu6"/>
+        <segue reference="944-yp-VZh"/>
     </inferredMetricsTieBreakers>
 </document>

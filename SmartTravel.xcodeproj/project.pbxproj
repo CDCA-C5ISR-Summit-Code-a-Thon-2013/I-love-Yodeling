@@ -47,6 +47,7 @@
 		D2F22D021834236100B63DBE /* gibbeslogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2F22D011834236100B63DBE /* gibbeslogo.jpg */; };
 		D2F22D041834246000B63DBE /* magnolialogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2F22D031834246000B63DBE /* magnolialogo.jpg */; };
 		D2F22D08183426BC00B63DBE /* yogibearlogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2F22D07183426BC00B63DBE /* yogibearlogo.jpg */; };
+		D2F22D0C18342F5A00B63DBE /* applebeesbackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2F22D0B18342F5A00B63DBE /* applebeesbackground.jpg */; };
 		D61E1F451833E2F500A42013 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = D61E1F441833E2F500A42013 /* Location.m */; };
 		D61E1F4C1833FE0700A42013 /* ImageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D61E1F4B1833FE0700A42013 /* ImageHandler.m */; };
 		D61E1F4F1833FF3400A42013 /* 722-location-pin.png in Resources */ = {isa = PBXBuildFile; fileRef = D61E1F4D1833FF3400A42013 /* 722-location-pin.png */; };
@@ -54,6 +55,8 @@
 		D61E1F53183409A000A42013 /* BookmarkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D61E1F52183409A000A42013 /* BookmarkManager.m */; };
 		D61E1F5E1834182600A42013 /* 726-star-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = D61E1F5C1834182600A42013 /* 726-star-selected.png */; };
 		D61E1F5F1834182600A42013 /* 726-star-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D61E1F5D1834182600A42013 /* 726-star-selected@2x.png */; };
+		D61E1F6118342C6E00A42013 /* gg.png in Resources */ = {isa = PBXBuildFile; fileRef = D61E1F6018342C6E00A42013 /* gg.png */; };
+		D61E1F6418342C9400A42013 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D61E1F6318342C9400A42013 /* SplashViewController.m */; };
 		D6C9386C1833D33B0083F04F /* LocationAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C9386B1833D33B0083F04F /* LocationAnnotation.m */; };
 		D6CBEDDC1833CB3F0093A175 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6CBEDDB1833CB3F0093A175 /* MapKit.framework */; };
 /* End PBXBuildFile section */
@@ -123,6 +126,7 @@
 		D2F22D011834236100B63DBE /* gibbeslogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gibbeslogo.jpg; sourceTree = "<group>"; };
 		D2F22D031834246000B63DBE /* magnolialogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = magnolialogo.jpg; sourceTree = "<group>"; };
 		D2F22D07183426BC00B63DBE /* yogibearlogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yogibearlogo.jpg; sourceTree = "<group>"; };
+		D2F22D0B18342F5A00B63DBE /* applebeesbackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = applebeesbackground.jpg; sourceTree = "<group>"; };
 		D61E1F431833E2F500A42013 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		D61E1F441833E2F500A42013 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		D61E1F4A1833FE0700A42013 /* ImageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageHandler.h; sourceTree = "<group>"; };
@@ -133,6 +137,9 @@
 		D61E1F52183409A000A42013 /* BookmarkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkManager.m; sourceTree = "<group>"; };
 		D61E1F5C1834182600A42013 /* 726-star-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "726-star-selected.png"; sourceTree = "<group>"; };
 		D61E1F5D1834182600A42013 /* 726-star-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "726-star-selected@2x.png"; sourceTree = "<group>"; };
+		D61E1F6018342C6E00A42013 /* gg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gg.png; sourceTree = "<group>"; };
+		D61E1F6218342C9400A42013 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
+		D61E1F6318342C9400A42013 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
 		D6C9386A1833D33B0083F04F /* LocationAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationAnnotation.h; sourceTree = "<group>"; };
 		D6C9386B1833D33B0083F04F /* LocationAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationAnnotation.m; sourceTree = "<group>"; };
 		D6CBEDDB1833CB3F0093A175 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -224,6 +231,8 @@
 				D61E1F4B1833FE0700A42013 /* ImageHandler.m */,
 				D61E1F51183409A000A42013 /* BookmarkManager.h */,
 				D61E1F52183409A000A42013 /* BookmarkManager.m */,
+				D61E1F6218342C9400A42013 /* SplashViewController.h */,
+				D61E1F6318342C9400A42013 /* SplashViewController.m */,
 			);
 			path = SmartTravel;
 			sourceTree = "<group>";
@@ -270,6 +279,8 @@
 			isa = PBXGroup;
 			children = (
 				921D055C18342EA600DC801E /* jellystone.jpg */,
+				D2F22D0B18342F5A00B63DBE /* applebeesbackground.jpg */,
+				D61E1F6018342C6E00A42013 /* gg.png */,
 				928CB242183424100048266E /* neon_stripper.jpg */,
 				D2F22D031834246000B63DBE /* magnolialogo.jpg */,
 				D2F22D011834236100B63DBE /* gibbeslogo.jpg */,
@@ -379,8 +390,10 @@
 				D2F22CFA18341EAD00B63DBE /* applebeeslogo.jpg in Resources */,
 				9267E7F71833C54F004796FE /* Main_iPad.storyboard in Resources */,
 				9267E82E1833DF73004796FE /* star@2x.png in Resources */,
+				D61E1F6118342C6E00A42013 /* gg.png in Resources */,
 				D61E1F5E1834182600A42013 /* 726-star-selected.png in Resources */,
 				D2F22D001834226B00B63DBE /* holidayinnlogo.jpg in Resources */,
+				D2F22D0C18342F5A00B63DBE /* applebeesbackground.jpg in Resources */,
 				D2F22CFC18341FB500B63DBE /* marketpavilionlogo.jpg in Resources */,
 				9267E7FC1833C54F004796FE /* Images.xcassets in Resources */,
 				9267E7F41833C54F004796FE /* Main_iPhone.storyboard in Resources */,
@@ -415,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2F22CF01833FA6700B63DBE /* UIImage+ImageEffects.m in Sources */,
+				D61E1F6418342C9400A42013 /* SplashViewController.m in Sources */,
 				9267E7F11833C54F004796FE /* SmartTravelAppDelegate.m in Sources */,
 				D2F22CED1833E13200B63DBE /* MockData.m in Sources */,
 				9267E7ED1833C54F004796FE /* main.m in Sources */,
