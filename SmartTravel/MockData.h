@@ -11,4 +11,6 @@
 
 @interface MockData : NSObject
 
+- (NSArray *) loadMockData;
+
 @end
