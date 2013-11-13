@@ -49,6 +49,9 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
+    // show user location
+    _mapView.showsUserLocation = TRUE;
+    
     // we want the map to be zoomed in a specific region
     CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(32.9, -79.9158);
     [_mapView setCenterCoordinate:coordinate animated:FALSE];
@@ -80,13 +83,13 @@
     location = [[Location alloc] initWithName:@"Applebee's" andAddress:@"4910 Ashley Phosphate Road" andCoordinate:CLLocationCoordinate2DMake(32.918088, -80.103746)];
     annotation = [[LocationAnnotation alloc] initWithLocation:location];
 //    annotation = [[LocationAnnotation alloc] initWithCoordinate:CLLocationCoordinate2DMake(32.918088, -80.103746) andName:@"Applebee's" andAddress:@"4910 Ashley Phosphate Road"];
-//    [_mapView addAnnotation:annotation];
+    [_mapView addAnnotation:annotation];
     
     // Outback 32.95452,-80.038254 7643 Rivers Avenue
     location = [[Location alloc] initWithName:@"Outback Steakhouse" andAddress:@"7643 Rivers Avenue" andCoordinate:CLLocationCoordinate2DMake(32.95452, -80.038254)];
     annotation = [[LocationAnnotation alloc] initWithLocation:location];
 //    annotation = [[LocationAnnotation alloc] initWithCoordinate:CLLocationCoordinate2DMake(32.95452, -80.038254) andName:@"Outback Steakhouse" andAddress:@"7643 Rivers Avenue"];
-//    [_mapView addAnnotation:annotation];
+    [_mapView addAnnotation:annotation];
     
     // Outback 32.814401,-80.025895 1890 Sam Rittenberg Boulevard
     location = [[Location alloc] initWithName:@"Outback Steakhouse" andAddress:@"1890 Sam Rittenberg Boulevard" andCoordinate:CLLocationCoordinate2DMake(32.814401, -80.025895)];
@@ -107,11 +110,17 @@
     [_mapView addAnnotation:annotation];
 }
 
+#pragma mark - MKMapViewDelegate functions
+
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
 {
-    MKAnnotationView *annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"location"];
-    annotationView.canShowCallout = YES;
-//    annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIBut];
+    MKAnnotationView *annotationView = nil;
+    
+    if ([annotation isKindOfClass:[LocationAnnotation class]])
+    {
+        annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"location"];
+        annotationView.canShowCallout = YES;
+    }
     
     return annotationView;
 }
