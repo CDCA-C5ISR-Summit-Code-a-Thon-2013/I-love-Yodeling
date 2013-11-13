@@ -123,7 +123,7 @@
             </objects>
             <point key="canvasLocation" x="-506" y="1040"/>
         </scene>
-        <!--Bookmark View Controller - Item 2-->
+        <!--Bookmark View Controller - Bookmarks-->
         <scene sceneID="B1k-KW-vdL">
             <objects>
                 <viewController id="b8j-sc-29H" customClass="BookmarkViewController" sceneMemberID="viewController">
@@ -181,7 +181,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="yJd-fE-y6Y"/>
+                    <tabBarItem key="tabBarItem" title="Bookmarks" image="star.png" id="yJd-fE-y6Y"/>
                     <connections>
                         <outlet property="bookmarkTable" destination="6RQ-Nd-V09" id="Fd8-oP-GV4"/>
                     </connections>
@@ -193,6 +193,7 @@
     </scenes>
     <resources>
         <image name="06-magnify.png" width="24" height="24"/>
+        <image name="star.png" width="28" height="26"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
