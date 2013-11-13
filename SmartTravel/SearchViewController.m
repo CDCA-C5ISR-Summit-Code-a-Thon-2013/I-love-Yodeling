@@ -44,12 +44,14 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 2;
+    if (section == 0) {
+        return 1;
+    } else {
+        return 1;
+    }
 }
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    UITableViewCell *cell;
     
     if (indexPath.section == 0) {
         
@@ -62,7 +64,7 @@
         
         return cell;
         
-    } else if (indexPath.section == 1) {
+    } else {
         
         static NSString *CellIdentifier = @"searchCell";
         
@@ -73,8 +75,6 @@
         
         return cell;
     }
-    
-    return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
