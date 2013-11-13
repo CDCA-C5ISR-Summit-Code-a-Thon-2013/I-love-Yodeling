@@ -142,7 +142,11 @@
     
     [self.searchBar resignFirstResponder];
     
-    if ([searchBar.text isEqual: @"29412"]) {
+    if ([searchBar.text isEqual: @"29412"] ||
+        [searchBar.text isEqual: @"29464"] ||
+        [searchBar.text isEqual: @"29466"] ||
+        [searchBar.text isEqual: @"29407"] ||
+        [searchBar.text isEqual: @"29405"] ) {
         
         [self.searchTableView reloadData];
         self.searchViewLabel.hidden = YES;
@@ -152,7 +156,7 @@
         
         self.searchTableView.hidden = YES;
         self.searchViewLabel.hidden = NO;
-        self.searchViewLabel.text = @"Sorry!  No deals found in this area. :(";
+        self.searchViewLabel.text = @"Sorry!  No deals found in this area :(";
     }
     
 }
