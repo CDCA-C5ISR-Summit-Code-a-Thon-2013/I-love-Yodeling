@@ -39,7 +39,7 @@
     if ([BookmarkManager bookmarkCount] <= 0)
     {
         [_noBookmarksLabel setHidden:FALSE];
-        [_noBookmarksLabel setTextColor:[UIColor blueColor]];
+        [_noBookmarksLabel setTextColor:[UIColor blackColor]];
         [_noBookmarksLabel setAlpha:0.5f];
         [_bookmarkTable setHidden:TRUE];
     }
