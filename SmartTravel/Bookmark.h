@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Location.h"
 
 @interface Bookmark : NSObject
 
-@property (strong, nonatomic) NSString *businessImagePath;
-@property (strong, nonatomic) NSString *businessname;
-@property (strong, nonatomic) NSString *dealText;
+//@property (strong, nonatomic) NSString *businessImagePath;
+//@property (strong, nonatomic) NSString *businessname;
+//@property (strong, nonatomic) NSString *dealText;
+
+@property (nonatomic, strong) Location *location;
 
 @end

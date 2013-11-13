@@ -9,6 +9,7 @@
 #import "BookmarkViewController.h"
 #import "SearchCell.h"
 #import "Bookmark.h"
+#import "MockData.h"
 
 @interface BookmarkViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *bookmarkTable;
@@ -31,18 +32,12 @@
     
     if ([_bookmarks count] == 0) {
         
-        _bookmarks = [[NSMutableArray alloc] init];
+        MockData *mockme = [[MockData alloc] init];
         
-        Bookmark *mark1 = [[Bookmark alloc] init];
-        mark1.businessname = @"CiCi's";
-        mark1.dealText = @"All you can eat pizza for free!!!!";
-        
-        Bookmark *mark2 = [[Bookmark alloc] init];
-        mark2.businessname = @"Mariott Hotel";
-        mark2.dealText = @"Free hotel rooms!!!!";
-        
-        [_bookmarks addObject:mark1];
-        [_bookmarks addObject:mark2];
+        _bookmarks = [[NSMutableArray alloc] initWithArray:[mockme loadMockData]];
+//        
+//        [_bookmarks addObject:mark1];
+//        [_bookmarks addObject:mark2];
         
         [self.bookmarkTable reloadData];
     }
@@ -59,8 +54,8 @@
     Bookmark *bookmark = [_bookmarks objectAtIndex:[indexPath row]];
     
     SearchCell *bookmarkCell = [self.bookmarkTable dequeueReusableCellWithIdentifier:@"bookmarkCell"];
-    bookmarkCell.businessnameLabel.text = bookmark.businessname;
-    bookmarkCell.dealLabel.text = bookmark.dealText;
+    bookmarkCell.businessnameLabel.text = bookmark.location.name;
+    bookmarkCell.dealLabel.text = bookmark.location.address;
     [bookmarkCell.businessImage setBackgroundColor:[UIColor blackColor]];
     return bookmarkCell;
 }

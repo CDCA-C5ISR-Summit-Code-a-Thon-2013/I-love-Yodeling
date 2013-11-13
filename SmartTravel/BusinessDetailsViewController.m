@@ -26,8 +26,30 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    UIToolbar *toolBar;
+    toolBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
+    toolBar.frame = CGRectMake(0, 20, 320, 50);
+    toolBar.barStyle = UIBarStyleDefault;
+    [toolBar sizeToFit];
+    UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithTitle:@"DONE" style:UIBarButtonItemStyleBordered target:self action:@selector(doneAction)];
+    
+    
+    NSArray *barButton  =   [[NSArray alloc] initWithObjects:flexibleSpace,doneButton,nil];
+    [toolBar setItems:barButton];
+    
+    [self.view addSubview:toolBar];
+    barButton = nil;
+    [super viewDidLoad];
+
 	// Do any additional setup after loading the view.
 }
+
+-(void)doneAction{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 
 - (void)didReceiveMemoryWarning
 {
