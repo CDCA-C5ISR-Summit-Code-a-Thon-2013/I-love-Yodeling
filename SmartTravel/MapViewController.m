@@ -82,31 +82,26 @@
     // Applebee's 4910 Ashley Phosphate Road
     location = [[Location alloc] initWithName:@"Applebee's" andAddress:@"4910 Ashley Phosphate Road" andCoordinate:CLLocationCoordinate2DMake(32.918088, -80.103746)];
     annotation = [[LocationAnnotation alloc] initWithLocation:location];
-//    annotation = [[LocationAnnotation alloc] initWithCoordinate:CLLocationCoordinate2DMake(32.918088, -80.103746) andName:@"Applebee's" andAddress:@"4910 Ashley Phosphate Road"];
     [_mapView addAnnotation:annotation];
     
     // Outback 32.95452,-80.038254 7643 Rivers Avenue
     location = [[Location alloc] initWithName:@"Outback Steakhouse" andAddress:@"7643 Rivers Avenue" andCoordinate:CLLocationCoordinate2DMake(32.95452, -80.038254)];
     annotation = [[LocationAnnotation alloc] initWithLocation:location];
-//    annotation = [[LocationAnnotation alloc] initWithCoordinate:CLLocationCoordinate2DMake(32.95452, -80.038254) andName:@"Outback Steakhouse" andAddress:@"7643 Rivers Avenue"];
     [_mapView addAnnotation:annotation];
     
     // Outback 32.814401,-80.025895 1890 Sam Rittenberg Boulevard
     location = [[Location alloc] initWithName:@"Outback Steakhouse" andAddress:@"1890 Sam Rittenberg Boulevard" andCoordinate:CLLocationCoordinate2DMake(32.814401, -80.025895)];
     annotation = [[LocationAnnotation alloc] initWithLocation:location];
-//    annotation = [[LocationAnnotation alloc] initWithCoordinate:CLLocationCoordinate2DMake(32.814401, -80.025895) andName:@"Outback Steakhouse" andAddress:@"1890 Sam Rittenberg Boulevard"];
     [_mapView addAnnotation:annotation];
     
     // Outback 32.825942,-79.880326 715 Johnnie Dodds Boulevard
     location = [[Location alloc] initWithName:@"Outback Steakhouse" andAddress:@"715 Johnnie Dodds Boulevard" andCoordinate:CLLocationCoordinate2DMake(32.825942, -79.880326)];
     annotation = [[LocationAnnotation alloc] initWithLocation:location];
-//    annotation = [[LocationAnnotation alloc] initWithCoordinate:CLLocationCoordinate2DMake(32.825942, -79.880326) andName:@"Outback Steakhouse" andAddress:@"715 Johnnie Dodds Boulevard"];
     [_mapView addAnnotation:annotation];
     
     // Page's (32.791189,-79.877175) Okra Grill 302 Coleman Boulevard
     location = [[Location alloc] initWithName:@"Page's Okra Grill" andAddress:@"302 Coleman Boulevard" andCoordinate:CLLocationCoordinate2DMake(32.791189, -79.877175)];
     annotation = [[LocationAnnotation alloc] initWithLocation:location];
-//    annotation = [[LocationAnnotation alloc] initWithCoordinate:CLLocationCoordinate2DMake(32.791189, -79.877175) andName:@"Page's Okra Grill" andAddress:@"302 Coleman Boulevard"];
     [_mapView addAnnotation:annotation];
 }
 

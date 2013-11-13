@@ -16,6 +16,7 @@
     _name = name;
     _address = address;
     _coordinate = coordinate;
+    _image = @"";
     return self;
 }
 
