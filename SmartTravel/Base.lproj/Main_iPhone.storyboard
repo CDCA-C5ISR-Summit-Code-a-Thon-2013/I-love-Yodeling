@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Item 1-->
+        <!--Map View Controller - Item 1-->
         <scene sceneID="ac8-cr-42u">
             <objects>
-                <viewController id="5WU-oa-ghJ" sceneMemberID="viewController">
+                <viewController id="5WU-oa-ghJ" customClass="MapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="u3j-Oj-dl3"/>
                         <viewControllerLayoutGuide type="bottom" id="Uom-8c-nKC"/>
@@ -36,16 +36,37 @@
                     <connections>
                         <segue destination="5WU-oa-ghJ" kind="relationship" relationship="viewControllers" id="FAO-LZ-QRs"/>
                         <segue destination="b8j-sc-29H" kind="relationship" relationship="viewControllers" id="oDk-hC-0X4"/>
+                        <segue destination="VPX-vl-frG" kind="relationship" relationship="viewControllers" id="Gs5-AD-Msf"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Etq-X4-aBM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-602" y="345"/>
+            <point key="canvasLocation" x="-569" y="343"/>
         </scene>
-        <!--View Controller - Item 2-->
+        <!--Search View Controller - Item-->
+        <scene sceneID="flL-qQ-hVu">
+            <objects>
+                <viewController id="VPX-vl-frG" customClass="SearchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r4d-kl-Oj8"/>
+                        <viewControllerLayoutGuide type="bottom" id="eYW-sW-71W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lkO-We-0f0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="oLM-rI-0jf"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2hN-kY-aoJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-506" y="1040"/>
+        </scene>
+        <!--Bookmark View Controller - Item 2-->
         <scene sceneID="B1k-KW-vdL">
             <objects>
-                <viewController id="b8j-sc-29H" sceneMemberID="viewController">
+                <viewController id="b8j-sc-29H" customClass="BookmarkViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ewg-h6-REP"/>
                         <viewControllerLayoutGuide type="bottom" id="2zB-9z-140"/>
