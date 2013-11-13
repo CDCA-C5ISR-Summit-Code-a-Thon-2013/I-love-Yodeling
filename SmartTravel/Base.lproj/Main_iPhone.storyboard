@@ -94,14 +94,14 @@
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Business Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6iW-P7-Te4">
-                                                    <rect key="frame" x="104" y="-9" width="196" height="44"/>
+                                                    <rect key="frame" x="104" y="-1" width="196" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="These are all the wonderful deals our company provides with a military id" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" preferredMaxLayoutWidth="196" translatesAutoresizingMaskIntoConstraints="NO" id="yqH-Su-CQm">
-                                                    <rect key="frame" x="104" y="33" width="196" height="46"/>
+                                                    <rect key="frame" x="104" y="41" width="196" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="highlightedColor"/>
@@ -111,7 +111,7 @@
                                         <connections>
                                             <outlet property="businessImage" destination="XC4-Ho-Dd5" id="qkM-9f-ZA0"/>
                                             <outlet property="businessnameLabel" destination="6iW-P7-Te4" id="J3O-yQ-8G6"/>
-                                            <outlet property="dealLabel" destination="yqH-Su-CQm" id="gIE-vd-G4z"/>
+                                            <outlet property="locationLabel" destination="yqH-Su-CQm" id="X4i-wP-2ri"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

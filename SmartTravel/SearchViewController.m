@@ -76,13 +76,15 @@
         if ( cell == nil ) {
             cell = [[SearchCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         }
-        
+    
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        [cell setAccessoryType:UITableViewCellAccessoryNone];
         cell.backgroundColor = [UIColor cyanColor];
         
         Bookmark *bookmark = [self.mockDataArray objectAtIndex:indexPath.row];
         
         cell.businessnameLabel.text = bookmark.location.name;
-        cell.dealLabel.text = bookmark.location.dealText;
+        cell.locationLabel.text = bookmark.location.address;
         cell.businessImage.backgroundColor = [UIColor blackColor];
 //        cell.businessImage.image = [UIImage imageNamed:bookmark.location.image];
     
