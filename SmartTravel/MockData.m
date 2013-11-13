@@ -7,6 +7,7 @@
 //
 
 #import "MockData.h"
+#import "UIImage+ImageEffects.h"
 
 @implementation MockData
 
@@ -85,6 +86,31 @@
                            location1, location2, location3, location4, location5, nil];
     
     return mediaArray;
+}
+
+
+
+
+- (UIImage *) blurSnapshotLightEffect : (UIViewController *) currentViewController {
+    
+    // create image context
+    UIGraphicsBeginImageContextWithOptions(currentViewController.view.bounds.size, NO, 0);
+    
+    // render a snapshot of the view hierarchy into the current context
+    [currentViewController.view drawViewHierarchyInRect:currentViewController.view.frame afterScreenUpdates:NO];
+    
+    // grabs snapshot
+    UIImage *snapshotImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    // apply blur effect using apple code
+    UIImage *blurredImage = [snapshotImage applyLightEffect];
+    //    UIImage *blurredImage = [drakeImage applyExtraLightEffect];
+    //    UIImage *blurredImage = [drakeImage applyTintEffectWithColor:[UIColor orangeColor]];
+    
+    // clean up
+    UIGraphicsEndImageContext();
+    
+    return blurredImage;
 }
 
 @end
