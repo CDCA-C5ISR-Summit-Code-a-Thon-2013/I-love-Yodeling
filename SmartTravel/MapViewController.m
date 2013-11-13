@@ -19,6 +19,7 @@
 
 @property (nonatomic, strong) IBOutlet MKMapView *mapView;
 @property (nonatomic, strong) BeaconManager *beaconManager;
+@property (nonatomic, strong) NSString *tempBeaconMinor;
 
 @end
 
@@ -125,7 +126,8 @@
 
 -(void)didFindBeacons:(NSArray *)beacons{
     CLBeacon *closestBeacon = [beacons firstObject];
-    
+    _tempBeaconMinor = [closestBeacon.minor stringValue];
+
     if (closestBeacon.proximity == CLProximityNear || closestBeacon.proximity == CLProximityImmediate) {
         [self performSegueWithIdentifier:@"showDetails" sender:self];
     }
@@ -136,7 +138,15 @@
         BusinessDetailsViewController *bdvc = [segue destinationViewController];
         MockData *mockData = [[MockData alloc] init];
         NSArray *data = [mockData getLocationData];
-        Location *location = data[0];
+        Location *location;
+        
+        if ([_tempBeaconMinor isEqualToString:@"1"]) {
+            location = data[0];
+        } else {
+            location = data[1];
+        }
+        
+        _tempBeaconMinor = nil;
         bdvc.businessAddress = location.address;
         bdvc.businessNameText = location.name;
         bdvc.businessDealText = location.dealText;
