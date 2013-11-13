@@ -31,13 +31,13 @@
     [locationArray addObject:[[Location alloc] initWithName:@"Page's Okra Grill" andAddress:@"302 Coleman Boulevard" andImage:@"" andDealText:@"20% off all entrees for veterans and active duty military." andCoordinate:CLLocationCoordinate2DMake(32.791189, -79.877175)]];
     
     // Market Pavilion Hotel
-    [locationArray addObject:[[Location alloc] initWithName:@"Market Pavilion Hotel" andAddress:@"225 East Bay Street" andImage:@"" andDealText:@"" andCoordinate:CLLocationCoordinate2DMake(32.781024, -79.927685)]];
+    [locationArray addObject:[[Location alloc] initWithName:@"Market Pavilion Hotel" andAddress:@"225 East Bay Street" andImage:@"" andDealText:@"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec nibh ac leo blandit vestibulum in quis turpis. Nunc convallis consectetur tortor eu sodales. Sed ut enim dolor. Vestibulum vitae sodales tellus. Cras vulputate odio vel feugiat eleifend. Duis in est quis erat dapibus pulvinar vel id tortor. Curabitur et porttitor ante, nec interdum lectus. Fusce a mauris et eros tristique ultrices nec non nisl." andCoordinate:CLLocationCoordinate2DMake(32.781024, -79.927685)]];
     
     // The Mills House Hotel
-    [locationArray addObject:[[Location alloc] initWithName:@"The Mills House Hotel" andAddress:@"115 Meeting Street" andImage:@"" andDealText:@"" andCoordinate:CLLocationCoordinate2DMake(32.778002, -79.931762)]];
+    [locationArray addObject:[[Location alloc] initWithName:@"The Mills House Hotel" andAddress:@"115 Meeting Street" andImage:@"" andDealText:@"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec nibh ac leo blandit vestibulum in quis turpis. Nunc convallis consectetur tortor eu sodales. Sed ut enim dolor. Vestibulum vitae sodales tellus. Cras vulputate odio vel feugiat eleifend. Duis in est quis erat dapibus pulvinar vel id tortor. Curabitur et porttitor ante, nec interdum lectus. Fusce a mauris et eros tristique ultrices nec non nisl." andCoordinate:CLLocationCoordinate2DMake(32.778002, -79.931762)]];
     
     // Holiday Inn Express Hotel 350 Johnnie Dodds Boulevard
-    [locationArray addObject:[[Location alloc] initWithName:@"Holiday Inn Express Hotel" andAddress:@"350 Johnnie Dodds Boulevard" andImage:@"" andDealText:@"" andCoordinate:CLLocationCoordinate2DMake(32.80478, -79.892934)]];
+    [locationArray addObject:[[Location alloc] initWithName:@"Holiday Inn Express Hotel" andAddress:@"350 Johnnie Dodds Boulevard" andImage:@"" andDealText:@"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec nibh ac leo blandit vestibulum in quis turpis. Nunc convallis consectetur tortor eu sodales. Sed ut enim dolor. Vestibulum vitae sodales tellus. Cras vulputate odio vel feugiat eleifend. Duis in est quis erat dapibus pulvinar vel id tortor. Curabitur et porttitor ante, nec interdum lectus. Fusce a mauris et eros tristique ultrices nec non nisl." andCoordinate:CLLocationCoordinate2DMake(32.80478, -79.892934)]];
     
     // Gibbes Museum of Art
     [locationArray addObject:[[Location alloc] initWithName:@"Gibbes Museum of Art" andAddress:@"135 Meeting Street" andImage:@"" andDealText:@"Military rate of $7 ($2 savings)" andCoordinate:CLLocationCoordinate2DMake(32.778985, -79.931322)]];

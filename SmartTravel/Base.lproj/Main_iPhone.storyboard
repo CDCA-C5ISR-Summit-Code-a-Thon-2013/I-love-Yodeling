@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8vF-4Y-7Y1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8vF-4Y-7Y1">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Map View Controller - Map-->
@@ -65,6 +65,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M8h-Yi-wcR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="522"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Simply enter a zip code to check for deals!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="hkk-sa-CJm">
                                 <rect key="frame" x="20" y="80" width="280" height="311"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -126,9 +130,11 @@
                     <tabBarItem key="tabBarItem" title="Search" image="06-magnify.png" id="oLM-rI-0jf"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="backgroundImageView" destination="M8h-Yi-wcR" id="KND-ee-14I"/>
                         <outlet property="searchBar" destination="wtm-wL-cwZ" id="rqZ-eh-Eef"/>
                         <outlet property="searchBarView" destination="vQC-M5-48i" id="Bz6-0B-3ve"/>
                         <outlet property="searchTableView" destination="AQD-iu-Qu1" id="ap2-DU-iCs"/>
+                        <outlet property="searchViewLabel" destination="hkk-sa-CJm" id="LMy-5A-DRy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2hN-kY-aoJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -147,6 +153,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tJX-dF-dcc">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="520"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="105" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="6RQ-Nd-V09">
                                 <rect key="frame" x="0.0" y="20" width="320" height="500"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -181,7 +191,6 @@
                                         <connections>
                                             <outlet property="businessImage" destination="6aT-QH-Zdw" id="9ny-iS-dq8"/>
                                             <outlet property="businessnameLabel" destination="2cW-lf-jad" id="GhG-dY-f1H"/>
-                                            <outlet property="dealLabel" destination="lzn-NC-Mlo" id="d36-3A-qsz"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -195,6 +204,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Bookmarks" image="star.png" id="yJd-fE-y6Y"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="tJX-dF-dcc" id="0RO-9g-fDH"/>
                         <outlet property="bookmarkTable" destination="6RQ-Nd-V09" id="Fd8-oP-GV4"/>
                     </connections>
                 </viewController>
