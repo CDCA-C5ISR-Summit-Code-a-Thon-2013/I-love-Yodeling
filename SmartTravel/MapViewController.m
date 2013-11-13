@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 SPARC. All rights reserved.
 //
 
+#import "LocationAnnotation.h"
 #import <MapKit/MapKit.h>
 #import "MapViewController.h"
 
@@ -32,6 +33,12 @@
     
     // show user location
     _mapView.showsUserLocation = TRUE;
+    
+    // set delegate
+    _mapView.delegate = self;
+    
+    // add annotations
+    [self addAnnotations];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -59,6 +66,37 @@
 //    coordinate = CLLocationCoordinate2DMake(32.918088, -80.103746);
 //    MKAnnotationView *annotation = MKAnnotat
 //    _mapView addAnnotation:<#(id<MKAnnotation>)#>
+    
+    LocationAnnotation *annotation = nil;
+    
+    // Applebee's 4910 Ashley Phosphate Road
+    annotation = [[LocationAnnotation alloc] initWithCoordinate:CLLocationCoordinate2DMake(32.918088, -80.103746) andName:@"Applebee's" andAddress:@"4910 Ashley Phosphate Road"];
+    [_mapView addAnnotation:annotation];
+    
+    // Outback 32.95452,-80.038254 7643 Rivers Avenue
+    annotation = [[LocationAnnotation alloc] initWithCoordinate:CLLocationCoordinate2DMake(32.95452, -80.038254) andName:@"Outback Steakhouse" andAddress:@"7643 Rivers Avenue"];
+    [_mapView addAnnotation:annotation];
+    
+    // Outback 32.814401,-80.025895 1890 Sam Rittenberg Boulevard
+    annotation = [[LocationAnnotation alloc] initWithCoordinate:CLLocationCoordinate2DMake(32.814401, -80.025895) andName:@"Outback Steakhouse" andAddress:@"1890 Sam Rittenberg Boulevard"];
+    [_mapView addAnnotation:annotation];
+    
+    // Outback 32.825942,-79.880326 715 Johnnie Dodds Boulevard
+    annotation = [[LocationAnnotation alloc] initWithCoordinate:CLLocationCoordinate2DMake(32.825942, -79.880326) andName:@"Outback Steakhouse" andAddress:@"715 Johnnie Dodds Boulevard"];
+    [_mapView addAnnotation:annotation];
+    
+    // Page's (32.791189,-79.877175) Okra Grill 302 Coleman Boulevard
+    annotation = [[LocationAnnotation alloc] initWithCoordinate:CLLocationCoordinate2DMake(32.791189, -79.877175) andName:@"Page's Okra Grill" andAddress:@"302 Coleman Boulevard"];
+    [_mapView addAnnotation:annotation];
+}
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
+{
+    MKAnnotationView *annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"location"];
+    annotationView.canShowCallout = YES;
+    annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    
+    return annotationView;
 }
 
 @end
