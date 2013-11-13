@@ -36,6 +36,7 @@
 		D246CB961833D04D00034DB0 /* 06-magnify@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D246CB941833D04D00034DB0 /* 06-magnify@2x.png */; };
 		D2F22CE81833DDD700B63DBE /* SearchBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F22CE71833DDD700B63DBE /* SearchBarCell.m */; };
 		D2F22CED1833E13200B63DBE /* MockData.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F22CEC1833E13200B63DBE /* MockData.m */; };
+		D2F22CF01833FA6700B63DBE /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F22CEF1833FA6700B63DBE /* UIImage+ImageEffects.m */; };
 		D61E1F451833E2F500A42013 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = D61E1F441833E2F500A42013 /* Location.m */; };
 		D61E1F481833FB2300A42013 /* 722-location-pin.png in Resources */ = {isa = PBXBuildFile; fileRef = D61E1F461833FB2300A42013 /* 722-location-pin.png */; };
 		D61E1F491833FB2300A42013 /* 722-location-pin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D61E1F471833FB2300A42013 /* 722-location-pin@2x.png */; };
@@ -98,6 +99,8 @@
 		D2F22CE71833DDD700B63DBE /* SearchBarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBarCell.m; sourceTree = "<group>"; };
 		D2F22CEB1833E13200B63DBE /* MockData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockData.h; sourceTree = "<group>"; };
 		D2F22CEC1833E13200B63DBE /* MockData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockData.m; sourceTree = "<group>"; };
+		D2F22CEE1833FA6700B63DBE /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		D2F22CEF1833FA6700B63DBE /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		D61E1F431833E2F500A42013 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		D61E1F441833E2F500A42013 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		D61E1F461833FB2300A42013 /* 722-location-pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "722-location-pin.png"; path = "../../../Downloads/Glyphish 6/Glyphish 6 Icons (PNG)/Gray/722-location-pin.png"; sourceTree = "<group>"; };
@@ -158,6 +161,8 @@
 		9267E7E61833C54F004796FE /* SmartTravel */ = {
 			isa = PBXGroup;
 			children = (
+				D2F22CEE1833FA6700B63DBE /* UIImage+ImageEffects.h */,
+				D2F22CEF1833FA6700B63DBE /* UIImage+ImageEffects.m */,
 				D2F22CE61833DDD700B63DBE /* SearchBarCell.h */,
 				D2F22CE71833DDD700B63DBE /* SearchBarCell.m */,
 				D246CB971833D05200034DB0 /* Images */,
@@ -353,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2F22CF01833FA6700B63DBE /* UIImage+ImageEffects.m in Sources */,
 				9267E7F11833C54F004796FE /* SmartTravelAppDelegate.m in Sources */,
 				D2F22CED1833E13200B63DBE /* MockData.m in Sources */,
 				9267E7ED1833C54F004796FE /* main.m in Sources */,
