@@ -52,6 +52,12 @@
     self.searchViewLabel.textColor = [UIColor blueColor];
     self.searchViewLabel.alpha = .5;
     
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
+    
     [self.searchTableView reloadData];
 }
 
@@ -139,6 +145,17 @@
     [self.searchTableView reloadData];
     self.searchViewLabel.hidden = YES;
     self.searchTableView.hidden = NO;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return NO;
+}
+
+- (void) dismissKeyboard
+{
+    // add self
+    [self.searchBar resignFirstResponder];
 }
 
 @end
