@@ -60,6 +60,8 @@
 		D61E1F6118342C6E00A42013 /* gg.png in Resources */ = {isa = PBXBuildFile; fileRef = D61E1F6018342C6E00A42013 /* gg.png */; };
 		D61E1F6418342C9400A42013 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D61E1F6318342C9400A42013 /* SplashViewController.m */; };
 		D61E1F6618342E2800A42013 /* ggggggggggggg.png in Resources */ = {isa = PBXBuildFile; fileRef = D61E1F6518342E2800A42013 /* ggggggggggggg.png */; };
+		D6BB5ECA183434A900787AD1 /* Charleston_gibbes_art_gallery.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6BB5EC8183434A900787AD1 /* Charleston_gibbes_art_gallery.jpg */; };
+		D6BB5ECB183434A900787AD1 /* Holiday_Inn_Express-Night.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D6BB5EC9183434A900787AD1 /* Holiday_Inn_Express-Night.jpeg */; };
 		D6C9386C1833D33B0083F04F /* LocationAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C9386B1833D33B0083F04F /* LocationAnnotation.m */; };
 		D6CBEDDC1833CB3F0093A175 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6CBEDDB1833CB3F0093A175 /* MapKit.framework */; };
 /* End PBXBuildFile section */
@@ -146,6 +148,8 @@
 		D61E1F6218342C9400A42013 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
 		D61E1F6318342C9400A42013 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
 		D61E1F6518342E2800A42013 /* ggggggggggggg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ggggggggggggg.png; sourceTree = "<group>"; };
+		D6BB5EC8183434A900787AD1 /* Charleston_gibbes_art_gallery.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Charleston_gibbes_art_gallery.jpg; sourceTree = "<group>"; };
+		D6BB5EC9183434A900787AD1 /* Holiday_Inn_Express-Night.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Holiday_Inn_Express-Night.jpeg"; sourceTree = "<group>"; };
 		D6C9386A1833D33B0083F04F /* LocationAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationAnnotation.h; sourceTree = "<group>"; };
 		D6C9386B1833D33B0083F04F /* LocationAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationAnnotation.m; sourceTree = "<group>"; };
 		D6CBEDDB1833CB3F0093A175 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -284,6 +288,8 @@
 		D246CB971833D05200034DB0 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D6BB5EC8183434A900787AD1 /* Charleston_gibbes_art_gallery.jpg */,
+				D6BB5EC9183434A900787AD1 /* Holiday_Inn_Express-Night.jpeg */,
 				D2F22D0F183433CF00B63DBE /* marketpavilionbackground.jpg */,
 				D2F22D0D183431A200B63DBE /* pagesbackground.jpg */,
 				D61E1F6518342E2800A42013 /* ggggggggggggg.png */,
@@ -395,6 +401,7 @@
 				928CB243183424100048266E /* neon_stripper.jpg in Resources */,
 				928CB23E183405170048266E /* outback.JPG in Resources */,
 				D246CB961833D04D00034DB0 /* 06-magnify@2x.png in Resources */,
+				D6BB5ECA183434A900787AD1 /* Charleston_gibbes_art_gallery.jpg in Resources */,
 				D61E1F6618342E2800A42013 /* ggggggggggggg.png in Resources */,
 				D2F22D10183433CF00B63DBE /* marketpavilionbackground.jpg in Resources */,
 				D2F22D041834246000B63DBE /* magnolialogo.jpg in Resources */,
@@ -407,6 +414,7 @@
 				D2F22D0E183431A200B63DBE /* pagesbackground.jpg in Resources */,
 				D2F22D0C18342F5A00B63DBE /* applebeesbackground.jpg in Resources */,
 				D2F22CFC18341FB500B63DBE /* marketpavilionlogo.jpg in Resources */,
+				D6BB5ECB183434A900787AD1 /* Holiday_Inn_Express-Night.jpeg in Resources */,
 				9267E7FC1833C54F004796FE /* Images.xcassets in Resources */,
 				9267E7F41833C54F004796FE /* Main_iPhone.storyboard in Resources */,
 				D2F22D021834236100B63DBE /* gibbeslogo.jpg in Resources */,
