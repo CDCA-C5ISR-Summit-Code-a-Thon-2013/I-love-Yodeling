@@ -13,6 +13,7 @@
 #import "ImageHandler.h"
 
 @interface BookmarkViewController ()
+@property (nonatomic, strong) IBOutlet UILabel *noBookmarksLabel;
 @property (weak, nonatomic) IBOutlet UITableView *bookmarkTable;
 @property (nonatomic, strong) IBOutlet UIImageView *backgroundImage;
 @end
@@ -35,7 +36,19 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    [self.bookmarkTable reloadData];
+    if ([BookmarkManager bookmarkCount] <= 0)
+    {
+        [_noBookmarksLabel setHidden:FALSE];
+        [_noBookmarksLabel setTextColor:[UIColor blueColor]];
+        [_noBookmarksLabel setAlpha:0.5f];
+        [_bookmarkTable setHidden:TRUE];
+    }
+    else
+    {
+        [_bookmarkTable reloadData];
+        [_bookmarkTable setHidden:FALSE];
+        [_noBookmarksLabel setHidden:TRUE];
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated

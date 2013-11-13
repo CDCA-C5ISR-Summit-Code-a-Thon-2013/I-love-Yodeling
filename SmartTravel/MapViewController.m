@@ -105,9 +105,8 @@
         MockData *mockData = [[MockData alloc] init];
         
         // set add bookmark button
-        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
-        [button.titleLabel setText:@"+"];
-        [button.titleLabel setTextColor:[UIColor blueColor]];
+        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 24, 24)];
+        [button.titleLabel setTintColor:[UIColor blueColor]];
         [button setAlpha:0.5f];
         [button addTarget:self action:@selector(bookmarkButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
         [button setBackgroundColor:[UIColor clearColor]];
@@ -118,11 +117,15 @@
         // is this location bookmarked?
         if ([BookmarkManager isLocationBookmarked:location])
         {
-            
+            [button setImage:[UIImage imageNamed:@"726-star-selected.png"] forState:UIControlStateNormal];
+            [button setImage:[UIImage imageNamed:@"726-star-selected.png"] forState:UIControlStateSelected];
+            [button setImage:[UIImage imageNamed:@"726-star-selected.png"] forState:UIControlStateHighlighted];
         }
         else
         {
-            
+            [button setImage:[UIImage imageNamed:@"star.png"] forState:UIControlStateNormal];
+            [button setImage:[UIImage imageNamed:@"star.png"] forState:UIControlStateSelected];
+            [button setImage:[UIImage imageNamed:@"star.png"] forState:UIControlStateHighlighted];
         }
     }
     
@@ -139,10 +142,18 @@
     if ([BookmarkManager isLocationBookmarked:location])
     {
         [BookmarkManager removeBookmark:location];
+        
+        [button setImage:[UIImage imageNamed:@"star.png"] forState:UIControlStateNormal];
+        [button setImage:[UIImage imageNamed:@"star.png"] forState:UIControlStateSelected];
+        [button setImage:[UIImage imageNamed:@"star.png"] forState:UIControlStateHighlighted];
     }
     else
     {
         [BookmarkManager addBookmark:location];
+        
+        [button setImage:[UIImage imageNamed:@"726-star-selected.png"] forState:UIControlStateNormal];
+        [button setImage:[UIImage imageNamed:@"726-star-selected.png"] forState:UIControlStateSelected];
+        [button setImage:[UIImage imageNamed:@"726-star-selected.png"] forState:UIControlStateHighlighted];
     }
 }
 
